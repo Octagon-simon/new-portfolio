@@ -1,0 +1,47 @@
+.greetingsContainer {
+  background-color: var(--brand-purple-shade);
+  width: 160px;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.greetingsContainer p {
+  color: var(--brand-purple);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.heroNameContainer{
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+.heroNameContainer h1{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.heroSocial{
+  display: flex;
+  gap: 10px;
+}
+
+.heroMyMe{
+  max-width: 500px;
+  height: 500px;
+}
+
+.hasIcon{
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.heroContactButtons a{
+  color: var(--brand-purple-dark);
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 5px;
+}

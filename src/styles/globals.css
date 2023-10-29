@@ -1,6 +1,6 @@
-html,body{
+html, body{
   background-color: var(--brand-black);
-  color: #fff;
+  color: #4a4a4a !important;
 }
 
 
@@ -8,4 +8,6 @@ html,body{
   --brand-black : #090E16;
   --brand-rose : #C83267;
   --brand-purple : #7B4AE2;
+  --brand-purple-dark : #7b4ae273;
+  --brand-purple-shade : #7b4be214;
 }

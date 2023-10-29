@@ -1,0 +1,45 @@
+.hero-body{
+    padding: 3rem 4.5rem !important;
+}
+
+.navbar{
+    background-color: #7b4be214 !important;
+    max-width: 970px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.navbar-brand{
+    align-items: center !important;
+}
+.navbar .navbar-brand img{
+    width: 35px;
+    height: 35px;
+}
+
+.navbar a.navbar-item.is-active{
+    color: var(--brand-purple);
+}
+
+.title{
+    color: #fff !important;
+}
+
+.section-content{
+    padding: 3rem 0;
+}
+
+button.button{
+    border-radius: 15px;
+}
+
+button.button.is-brand-filled{
+    background-color: var(--brand-purple);
+    color: #fff !important;
+}
+
+button.button.is-brand-outline{
+    border-color: var(--brand-purple-dark);
+    background-color: transparent !important;
+    color: var(--brand-purple-dark) !important;
+}

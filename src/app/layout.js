@@ -1,8 +1,9 @@
-import './styles/globals.css';
-import './styles/bulma.css';
-import './styles/app.css';
+import '@/styles/globals.css';
+import '@/styles/app.css';
+import '@/styles/bulma.css';
 
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
