@@ -1,0 +1,11 @@
+html,body{
+  background-color: var(--brand-black);
+  color: #fff;
+}
+
+
+:root {
+  --brand-black : #090E16;
+  --brand-rose : #C83267;
+  --brand-purple : #7B4AE2;
+}
