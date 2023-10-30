@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
 html, body{
   background-color: var(--brand-black);
   color: #4a4a4a !important;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 
@@ -8,6 +11,8 @@ html, body{
   --brand-black : #090E16;
   --brand-rose : #C83267;
   --brand-purple : #7B4AE2;
-  --brand-purple-dark : #7b4ae273;
+  --brand-purple-dark-1 : rgba(123, 74, 226, 0.5);
+  --brand-purple-dark-2 : rgba(123, 74, 226, 0.2);
+  --brand-purple-dark-3 : rgba(123, 74, 226, 0.1);
   --brand-purple-shade : #7b4be214;
 }
