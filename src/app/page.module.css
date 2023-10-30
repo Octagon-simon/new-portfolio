@@ -76,7 +76,7 @@ button.isOutlined {
   border-width: 1px 0;
 }
 
-.experienceInner{
+.experienceInner {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -164,7 +164,7 @@ button.isOutlined {
   /* align-self: end; */
 }
 
-.hideCard{
+.hideCard {
   display: none !important;
 }
 
@@ -175,11 +175,11 @@ button.isOutlined {
   gap: 20px;
 }
 
-.projectCardsContainer .projectCard {
+.projectCard {
   border: 1px solid var(--brand-purple-dark-1);
   padding: 2rem;
   width: 100%;
-/* Limit to 4 child elements per row that is (100% / 4) - the gap */
+  /* Limit to 4 child elements per row that is (100% / 4) - the gap */
   max-width: calc(33.3% - 20px);
   border-radius: 15px;
   display: flex;
@@ -188,23 +188,27 @@ button.isOutlined {
   gap: 2rem;
 }
 
-.projectCardsContainer .projectCard .projectCardHead h4 {
+.projectCard .projectCardHead {
+  text-align: left;
+}
+
+.projectCard .projectCardHead h4 {
   color: #fff !important;
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 10px;
 }
 
-.projectCardsContainer .projectCard .projectCardHead p {
+.projectCard .projectCardHead p {
   width: 250px;
 }
 
-.projectCardsContainer .projectCard .projectCardBody .imageContainer {
+.projectCard .projectCardBody .imageContainer {
   margin-top: 20px;
   border-radius: 10px;
 }
 
-.projectCardsContainer .projectCard .projectCardBody .imageContainer img{
+.projectCard .projectCardBody .imageContainer img {
   border-radius: 10px;
   color: transparent;
   object-fit: cover;
@@ -217,7 +221,7 @@ button.isOutlined {
   flex-wrap: wrap;
 }
 
-.dateBadge{
+.dateBadge {
   margin-bottom: 10px;
   padding: 5px;
   width: 100%;
@@ -248,23 +252,23 @@ button.isOutlined {
   color: var(--brand-purple);
 }
 
-.badge.badgeBrandRose{
+.badge.badgeBrandRose {
   background-color: var(--brand-rose-dark-1);
   border-radius: 10px;
   color: var(--brand-rose);
 }
 
-.seeMore{
+.seeMore {
   padding: 2rem 0;
   text-align: right;
 }
 
-.seeMore a{
+.seeMore a {
   color: var(--brand-purple-dark-1);
   font-weight: 600;
 }
 
-.projectCardsContainerMobile{
+.projectCardsContainerMobile {
   display: none !important;
 }
 
@@ -340,20 +344,30 @@ button.isOutlined {
     justify-content: start;
   }
 
-  .projectCardsContainer{
+  .projectCardsContainer {
     display: none !important;
   }
 
-  .projectCardsContainerMobile{
+  .projectCardsContainerMobile {
     display: block !important;
+  }
+
+  .projectCardsContainerMobile .projectCard {
+    max-width: 100% !important;
   }
 }
 
 /* Styles for Desktop Screens */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+}
 
 /* Your tablet-specific styles here */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .projectCard {
+    max-width: calc(50% - 20px) !important;
+  }
+}
 
 /* Styles for screens wider than 1920 pixels (very large screens) */
 @media screen and (min-width: 1921px) {}

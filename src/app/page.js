@@ -426,11 +426,11 @@ export default function Home() {
 
           </div>
           <div className={styles.projectCardsContainerMobile}>
-            <Carousel showArrows={false} showIndicators={false} showThumbs={false} infiniteLoop={false} autoPlay={true} interval={0}
+            <Carousel showArrows={false} showIndicators={false} showThumbs={false} infiniteLoop={true} autoPlay={true} 
               swipeable={true}
-              stopOnHover={true}>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2021") && styles.hideCard}`}>
+              stopOnHover={false}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>Coding Blocks</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -455,8 +455,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2022") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>Octavalidate</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -481,8 +481,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2022") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>Word Unscrambler</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -507,8 +507,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2022") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>PostsAPIWP</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -533,8 +533,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2022") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>NFT Marketplace</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -559,8 +559,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2022") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>SanBlog</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -585,8 +585,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2022") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>Oshare</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -611,8 +611,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2023") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>TailorsKit</h4>
                     <div className={`${styles.dateBadge}`}>
@@ -637,8 +637,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='carousel-item'>
-                <div className={`${styles.projectCard} ${(dateRange && dateRange !== "2023") && styles.hideCard}`}>
+              <div className={`carousel-item`}>
+                <div className={`${styles.projectCard}`}>
                   <div className={styles.projectCardHead}>
                     <h4>Home Sparkle</h4>
                     <div className={`${styles.dateBadge}`}>
