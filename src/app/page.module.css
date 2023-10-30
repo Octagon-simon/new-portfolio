@@ -36,7 +36,7 @@
 .hasIcon {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .heroContactButtons {
@@ -52,10 +52,10 @@
   margin-bottom: 10px;
 }
 
-
-button.button.isFilled {
-  background-color: var(--brand-purple);
-  color: #fff !important;
+button.isFilled {
+  background-color: var(--brand-purple-dark-3) !important;
+  border-color: transparent !important;
+  color: var(--brand-purple-dark-1) !important;
 }
 
 button.isHeroOutline {
@@ -64,12 +64,15 @@ button.isHeroOutline {
   color: var(--brand-purple-dark-1) !important;
 }
 
+.sectionContent{
+  padding: 3rem;
+}
+
 .sectionExperience {
   /* border-top-width: 1px; */
   border-style: solid;
   border-color: var(--brand-purple-dark-2);
   /* border-bottom-width: 1px; */
-  padding: 3rem;
   border-width: 1px 0;
   display: flex;
   justify-content: center;
@@ -136,14 +139,62 @@ button.isHeroOutline {
   font-size: 1.5rem;
 }
 
+.title{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sectionAbout .aboutLargeText{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.heroMobile{
+  display: none;
+}
+
+.worksAndProjectsBtnGroup{
+  display: flex;
+  justify-content: end;
+  /* align-self: end; */
+}
 
 /* Mobile*/
 @media screen and (max-width: 767px) {
-  .heroColumns .heroColumnsItem:first-child {
+  .heroBody{
+    padding: 1rem !important;
+  }
+  
+  .sectionContent{
+    padding: 2.5rem 1rem !important;
+  }
+
+  .heroDesktop{
     display: none !important;
   }
 
+  .heroMobile{
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .heroMobile .heroSocial{
+    justify-content: center;
+  }
+
   .heroContactButtons {
+    align-items: center !important;
+  }
+
+  .heroContactButtons a{
+    margin-bottom: 0 !important;
+  }
+
+  .heroContactButtons {
+    flex-direction: row;
     align-items: flex-start;
   }
 
@@ -154,13 +205,34 @@ button.isHeroOutline {
 
   .sectionExperience .experienceCards {
     flex-direction: column;
+    align-items: center;
   }
 
   .sectionExperience .experienceDescription{
     display: none !important;
   }
 
+  .sectionAbout .aboutLargeText{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
 
+  .sectionExperience{
+    border: unset !important;
+  }
+
+  .sectionAbout img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .title{
+    font-size: 1.25rem;
+  }
+
+  .worksAndProjectsBtnGroup{
+    justify-content: start;
+  }
 }
 
 /* Styles for Desktop Screens */
