@@ -17,7 +17,7 @@ export default function Home() {
           <div className='container'>
             <div className={`columns ${styles.heroColumns} ${styles.heroDesktop}`}>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
-                <div className={styles.greetingsContainer}>
+                <div className={styles.badge}>
                   <p>👋 Greetings!</p>
                 </div>
                 <div className={styles.heroNameContainer}>
@@ -63,7 +63,7 @@ export default function Home() {
                 <Image className={styles.heroMyMe} src={'./my-me.svg'} width={500} height={500} alt='Simon Ugorji' />
               </div>
               <div className={`${''}`}>
-                <div className={styles.greetingsContainer}>
+                <div className={styles.badge}>
                   <p>👋 Greetings!</p>
                 </div>
                 <div className={styles.heroNameContainer}>
@@ -143,7 +143,7 @@ export default function Home() {
               <Image src="./myMe.svg" alt='Simon Ugorji' width={300} height={300} />
             </div>
             <div className='column'>
-              <div className={styles.greetingsContainer}>
+              <div className={styles.badge}>
                 <p>🧐 About me</p>
               </div>
               <h3 className={styles.aboutLargeText}>Simon Ugorji</h3>
@@ -162,7 +162,7 @@ export default function Home() {
         <div className='container'>
           <div className='columns'>
             <div className='column'>
-              <div className={styles.greetingsContainer}>
+              <div className={styles.badge}>
                 <p>🔗 Portfolio</p>
               </div>
               <h3 className={styles.title}>My Works And Projects</h3>
@@ -426,7 +426,7 @@ export default function Home() {
 
           </div>
           <div className={styles.projectCardsContainerMobile}>
-            <Carousel showArrows={false} showIndicators={false} showThumbs={false} infiniteLoop={true} autoPlay={true} 
+            <Carousel showArrows={false} showIndicators={false} showThumbs={false} infiniteLoop={false} autoPlay={false}
               swipeable={true}
               stopOnHover={false}>
               <div className={`carousel-item`}>
@@ -666,9 +666,69 @@ export default function Home() {
             </Carousel>
           </div>
           <div className={styles.seeMore}>
-            <a className={styles.hasIcon} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
+            <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
               Check out my blog on Medium <span className='icon'><Image src="/ArrowRight.svg" width={20} height={20} alt='Arrow Right Icon' /></span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.sectionContent} ${styles.skillsSection}`}>
+        <div className='container has-text-centered'>
+          <div className={styles.badge}>
+            <p>🧑‍💻 Skills · Experiences</p>
+          </div>
+          <h4 className={styles.largeText}>Technologies & Skills</h4>
+
+          <div className={styles.hasPadding}>
+            <div className='mb-5'>
+              <p className='mb-5'>Technologies that I use everyday</p>
+
+              <ul className={styles.techIcons}>
+                <li><Image src="/tech/Javascript.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/TypeScript.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/Nodejs.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/React.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/Nextjs.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/HTML5.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/CSS.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/Github.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/Git.svg" alt='' width={50} height={50} /></li>
+                <li><Image src="/tech/Figma.svg" alt='' width={50} height={50} /></li>
+              </ul>
+            </div>
+            <div>
+              <p className='mb-5'>Databases that I use everyday</p>
+              <ul className={styles.techIcons}>
+                <li><Image src="/tech/MongoDB.svg" alt='' width={25} height={25} /></li>
+                <li><Image src="/tech/Sql.svg" alt='' width={50} height={50} /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.sectionContent} ${styles.journeySection}`}>
+        <div className='container'>
+          <div className={styles.badge}>
+            <p>💼 Career</p>
+          </div>
+          <h4 className={`has-text-centered ${styles.largeText}`}>My Journey so far</h4>
+
+          <div className={styles.hasPadding}>
+            <div className={styles.journey}>
+
+              <div className={styles.journeyBody}>
+                <h5>My Employment History</h5>
+                <p>Click on the link below to view a my employment history over time and the skills that I applied to the positions</p>
+              </div>
+              <div className={styles.journeyFooter}>
+                <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
+                  Check out my profile <span className='icon'><Image src="/ArrowRight.svg" width={20} height={20} alt='Arrow Right Icon' /></span>
+                </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>

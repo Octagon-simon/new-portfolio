@@ -1,4 +1,4 @@
-.greetingsContainer {
+/* .greetingsContainer {
   background-color: var(--brand-purple-shade);
   width: 160px;
   border-radius: 15px;
@@ -10,7 +10,7 @@
   color: var(--brand-purple);
   font-size: 1.2rem;
   font-weight: bold;
-}
+} */
 
 .heroNameContainer {
   max-width: 200px;
@@ -50,6 +50,7 @@
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 10px;
+  font-size: .8em !important;
 }
 
 button.isFilled {
@@ -66,6 +67,10 @@ button.isOutlined {
 
 .sectionContent {
   padding: 3rem;
+}
+
+.hasPadding {
+  padding: 1rem;
 }
 
 .sectionExperience {
@@ -154,6 +159,13 @@ button.isOutlined {
   margin-bottom: 15px;
 }
 
+.largeText {
+  /* 48px */
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
 .heroMobile {
   display: none;
 }
@@ -238,7 +250,7 @@ button.isOutlined {
   max-width: 150px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 10px;
 }
 
@@ -263,13 +275,61 @@ button.isOutlined {
   text-align: right;
 }
 
-.seeMore a {
+.anchorTag {
   color: var(--brand-purple-dark-1);
   font-weight: 600;
 }
 
 .projectCardsContainerMobile {
   display: none !important;
+}
+
+.badge {
+  background-color: var(--brand-purple-shade);
+  width: 100%;
+  max-width: fit-content !important;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.badge p {
+  color: var(--brand-purple);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skillsSection .techIcons{
+  display: inline-flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.journey{
+  margin: auto;
+  background-color: var(--brand-purple-dark-3);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.journey .journeyBody h5{
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.journey .journeyBody p{
+  font-size: .8rem;
+}
+
+.journey .journeyFooter{
+  text-align: right;
 }
 
 /* Mobile*/
@@ -279,6 +339,10 @@ button.isOutlined {
   }
 
   .sectionContent {
+    padding: 2.5rem 1rem !important;
+  }
+
+  .hasPadding {
     padding: 2.5rem 1rem !important;
   }
 
@@ -327,6 +391,10 @@ button.isOutlined {
     margin-bottom: 20px;
   }
 
+  .largeText {
+    font-size: 1.25rem;
+  }
+
   .sectionExperience {
     border: unset !important;
   }
@@ -354,13 +422,16 @@ button.isOutlined {
 
   .projectCardsContainerMobile .projectCard {
     max-width: 100% !important;
+    margin: 0 5px !important;
+  }
+
+  .worksAndProjectsBtnGroup {
+    display: none !important;
   }
 }
 
 /* Styles for Desktop Screens */
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}
 
 /* Your tablet-specific styles here */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
