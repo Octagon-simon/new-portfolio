@@ -146,14 +146,8 @@ button.isOutlined {
   font-size: 1.5rem;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #fff;
-}
-
 .sectionAbout .aboutLargeText {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #fff;
   margin-bottom: 15px;
@@ -161,9 +155,10 @@ button.isOutlined {
 
 .largeText {
   /* 48px */
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #fff;
+  margin: 15px 0;
 }
 
 .heroMobile {
@@ -245,31 +240,6 @@ button.isOutlined {
   color: var(--brand-purple);
 }
 
-.badge {
-  padding: 5px 15px;
-  max-width: 150px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-
-.badge.badgeBrandGreen {
-  background-color: var(--brand-green-dark-1);
-  color: var(--brand-green);
-}
-
-.badge.badgeBrandPurple {
-  background-color: var(--brand-purple-dark-3);
-  color: var(--brand-purple);
-}
-
-.badge.badgeBrandRose {
-  background-color: var(--brand-rose-dark-1);
-  border-radius: 10px;
-  color: var(--brand-rose);
-}
-
 .seeMore {
   padding: 2rem 0;
   text-align: right;
@@ -290,7 +260,7 @@ button.isOutlined {
   max-width: fit-content !important;
   border-radius: 15px;
   padding: 10px;
-  margin: 10px auto;
+  margin: 10px 0;
 }
 
 .badge p {
@@ -299,13 +269,37 @@ button.isOutlined {
   font-weight: bold;
 }
 
-.skillsSection .techIcons{
+.badge.badgeBrandGreen {
+  background-color: var(--brand-green-dark-1);
+  color: var(--brand-green);
+}
+
+.badge.badgeBrandPurple {
+  background-color: var(--brand-purple-dark-3);
+  color: var(--brand-purple);
+}
+
+.badge.badgeBrandRose {
+  background-color: var(--brand-rose-dark-1);
+  border-radius: 10px;
+  color: var(--brand-rose);
+}
+
+.skillsSection .techIcons {
   display: inline-flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.journey{
+.skillsSection .badge, .journeySection .badge{
+  margin: auto;
+}
+
+.skillsSection .largeText, .journeySection .largeText{
+  text-align: center;
+}
+
+.journey {
   margin: auto;
   background-color: var(--brand-purple-dark-3);
   padding: 20px;
@@ -318,18 +312,60 @@ button.isOutlined {
   justify-content: space-between;
 }
 
-.journey .journeyBody h5{
+.journey .journeyBody h5 {
   color: #fff;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.journey .journeyBody p{
+.journey .journeyBody p {
   font-size: .8rem;
 }
 
-.journey .journeyFooter{
+.journey .journeyFooter {
   text-align: right;
+}
+
+.contactForm{
+  max-width: 500px;
+  margin: auto;
+}
+
+.label {
+  color: inherit !important;
+}
+
+.input {
+  background-color: transparent !important;
+  color: #fff;
+  border-color: var(--brand-purple-dark-1) !important;
+}
+
+.input::placeholder{
+  color: var(--brand-purple-dark-2);
+}
+
+.input:focus, .input:active{
+  background-color: transparent !important;
+}
+
+.contactButton{
+  background-color:  var(--brand-purple) !important;
+  color: #fff !important;
+  border-color: var(--brand-purple) !important;
+  width: 100%;
+}
+
+.backToTop{
+  background-color: transparent !important;
+  border: unset;
+  color: var(--brand-purple-dark-1);
+  cursor: pointer;
+}
+
+.techIconsWrapper{
+  padding-top: 3rem;
+  text-align: center;
 }
 
 /* Mobile*/
@@ -339,12 +375,12 @@ button.isOutlined {
   }
 
   .sectionContent {
-    padding: 2.5rem 1rem !important;
+    padding: 2rem 1rem !important;
   }
 
-  .hasPadding {
+  /* .hasPadding {
     padding: 2.5rem 1rem !important;
-  }
+  } */
 
   .heroDesktop {
     display: none !important;
@@ -427,6 +463,19 @@ button.isOutlined {
 
   .worksAndProjectsBtnGroup {
     display: none !important;
+  }
+
+  .skillsSection .badge, .journeySection .badge{
+    margin: 0 !important;
+  }
+
+  .skillsSection .largeText, .journeySection .largeText{
+    text-align: left !important;
+  }
+
+  .techIconsWrapper{
+    padding-top: 2rem;
+    text-align: left;
   }
 }
 

@@ -44,30 +44,6 @@ export default function Navbar() {
                     <a href="/" className="navbar-brand-link">
                         <Image src={"/brand-logo.svg"} alt={"Simon Ugorji"} width={"80"} height={"30"} />
                     </a>
-
-                    <a role="button" className="navbar-burger is-align-self-center" aria-label="menu" aria-expanded="false" data-target="NavContent" onClick={(event) => toggleMobileNav(event)}>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div id="NavContent" className="navbar-menu is-align-self-end">
-                    <div className="navbar-end" style={{gap : '20px'}}>
-                        {
-                            Object.keys(navItems).map((val, ind) => {
-
-                                const isActive = (currentUrl === navItems[val]);
-
-                                return <a key={ind} className={`navbar-item ${(isActive) ? 'is-active' : ''} `} href={navItems[val]}
-                                    onClick={unToggleMobileNav}>
-                                    {val}
-                                </a>
-                            })
-                        }
-                        <div className="navbar-item hide-on-desktop show-on-tablet">
-                            <button onClick={() => setIsModalActive(true)} className="button is-black hover-brand">Book now</button>
-                        </div>
-                    </div>
                 </div>
             </nav>
         </>

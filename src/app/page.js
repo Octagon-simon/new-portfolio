@@ -8,7 +8,29 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Home() {
 
-  const [dateRange, setDateRange] = useState("2022")
+  const [dateRange, setDateRange] = useState("2022");
+
+  const [hasValidated, setHasValidated] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    try {
+      const ov = new octaValidate('form_contact');
+
+      if (ov.validate()) {
+        e.currentTarget.submit();
+      } else {
+        setHasValidated(1); //same as true
+        e.preventDefault();
+      }
+
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
     <main className={styles.main}>
@@ -165,7 +187,7 @@ export default function Home() {
               <div className={styles.badge}>
                 <p>🔗 Portfolio</p>
               </div>
-              <h3 className={styles.title}>My Works And Projects</h3>
+              <h3 className={styles.largeText}>My Works And Projects</h3>
             </div>
             <div className='column is-align-self-flex-end'>
               <div className={`buttons-group ${styles.worksAndProjectsBtnGroup}`}>
@@ -674,13 +696,13 @@ export default function Home() {
       </section>
 
       <section className={`${styles.sectionContent} ${styles.skillsSection}`}>
-        <div className='container has-text-centered'>
-          <div className={styles.badge}>
-            <p>🧑‍💻 Skills · Experiences</p>
+        <div className='container'>
+          <div className={`${styles.badge}`}>
+            <p>🧑‍💻 Skills</p>
           </div>
           <h4 className={styles.largeText}>Technologies & Skills</h4>
 
-          <div className={styles.hasPadding}>
+          <div className={styles.techIconsWrapper}>
             <div className='mb-5'>
               <p className='mb-5'>Technologies that I use everyday</p>
 
@@ -710,7 +732,7 @@ export default function Home() {
 
       <section className={`${styles.sectionContent} ${styles.journeySection}`}>
         <div className='container'>
-          <div className={styles.badge}>
+          <div className={`m-auto ${styles.badge}`}>
             <p>💼 Career</p>
           </div>
           <h4 className={`has-text-centered ${styles.largeText}`}>My Journey so far</h4>
@@ -731,6 +753,53 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className={`${styles.sectionContent} ${styles.contactSection}`}>
+        <div className='container'>
+          <div className={`m-auto ${styles.badge}`}>
+            <p>📬 Contact</p>
+          </div>
+          <h4 className={`has-text-centered ${styles.largeText}`}>Let's talk!</h4>
+          <div className={styles.hasPadding}>
+            <div className={styles.contactForm}>
+
+              {
+                (hasValidated) && <div className='notification is-success mb-3'>
+                Do you like what you see? This form validation was served by my project Octavalidate!
+              </div>
+              }
+
+              <form action="https://formbold.com/s/35Ey3" id="form_contact" onSubmit={handleSubmit}>
+                <div className='field mb-3'>
+                  <label className={`label ${styles.label}`}>Your email (*)</label>
+                  <input ov-required-msg="Your email address is required" ov-email-msg="Please provide a valid email address" name="email" type='email' octavalidate="R,EMAIL" id="inp_email" className={`input ${styles.input}`} placeholder='me@you.com' />
+                </div>
+                <div className='field mb-3'>
+                  <label className={`label ${styles.label}`}>Your name (*)</label>
+                  <input type='text' name="name" ov-required-msg="Your name is required" octavalidate="R,ALPHA_SPACES" id="inp_name" className={`input ${styles.input}`} placeholder='John Doe' />
+                </div>
+                <div className='field mb-3'>
+                  <label className={`label ${styles.label}`}>Subject (*)</label>
+                  <input name="subject" type='text' ov-required-msg="Email subject is required" octavalidate="R, TEXT" id="inp_subject" className={`input ${styles.input}`} placeholder='Partnership' />
+                </div>
+                <div className='field mb-5'>
+                  <label className={`label ${styles.label}`}>Message (*)</label>
+                  <textarea name="message" style={{ minHeight: '150px' }} id="inp_message" octavalidate="R,TEXT" ov-required-msg="Your message is required" placeholder="Hello, I'm John from" className={`input ${styles.input}`}></textarea>
+                </div>
+                <div className='field mb-3'>
+                  <button className={`button ${styles.contactButton}`}>Send message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles.sectionContent} has-text-centered`}>
+        <button onClick={() => scrollToTop()} className={`${styles.hasIcon} ${styles.backToTop}`}>Back to top <span className='icon'>
+          <Image src="/ArrowUp.svg" alt="Arrow Up" width={20} height={20} /></span>
+        </button>
       </section>
     </main>
   )

@@ -1,5 +1,11 @@
+.hero{
+    min-height: 100vh;
+}
+
 .hero-body {
     padding: 5rem 4.5rem !important;
+    display: inline-flex;
+    align-items: center;
 }
 
 .navbar {

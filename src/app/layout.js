@@ -4,6 +4,7 @@ import '@/styles/bulma.css';
 
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,8 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script defer="true" src="/octavalidate.js" />
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>
