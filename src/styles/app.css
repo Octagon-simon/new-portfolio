@@ -37,8 +37,12 @@
     padding: 3rem 0;
 }
 
-button.button {
-    border-radius: 15px;
+.button {
+    border-radius: 15px !important;
+}
+
+.show-on-mobile {
+    display: none;
 }
 
 /*Media Queries*/
@@ -88,10 +92,6 @@ button.button {
 
     .hide-on-tablet {
         display: none !important;
-    }
-
-    .show-on-tablet {
-        display: block !important;
     }
 }
 

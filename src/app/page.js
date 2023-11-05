@@ -3,8 +3,286 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { useState } from 'react'
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const TechnologiesSlider = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+  return (
+    <Slider {...settings}>
+      <div>
+        <Image src="/tech/Javascript.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/TypeScript.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/Nodejs.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/React.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/Nextjs.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/HTML5.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/CSS.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/Github.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/Git.svg" alt='' width={50} height={50} />
+      </div>
+      <div>
+        <Image src="/tech/Figma.svg" alt='' width={50} height={50} />
+      </div>
+    </Slider>
+  );
+};
+
+const ProjectsSlider = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
+  return (
+    <Slider {...settings}>
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>Coding Blocks</h4>
+          <div className={`${styles.dateBadge}`}>
+            July 2021
+          </div>
+          <p>Using my PHP skills, I created a WordPress plugin that allows for the seamless embedding of styled code snippets within WordPress posts. This enhancement addresses the issue of unstyled default code snippets, providing a more appealing and readable presentation.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              WordPress
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/Octagon-simon/coding-blocks" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/coding-blocks.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>Octavalidate</h4>
+          <div className={`${styles.dateBadge}`}>
+            January 2022
+          </div>
+          <p>This is a feature-reach form validation library that was built with Javascript and PHP and it helps to validate your client-side and server-side forms using sophisticated regular expressions & validation rules. You will find this project implemented as a form validation for the contact section.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              Javascript
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/octagon-simon/octaValidate" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/octavalidate.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={`${styles.projectCard}`}>
+      <div className={styles.projectCardHead}>
+        <h4>Word Unscrambler</h4>
+        <div className={`${styles.dateBadge}`}>
+          August 2022
+        </div>
+        <p>This is a very small project that is built with Javascript that unscrambles any word so long as that word exists in the project's custom dictionary</p>
+      </div>
+      <div className={styles.projectCardBody}>
+        <div className={styles.badgeContainer}>
+          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+            Online
+          </div>
+          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+            Javascript
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler" rel="noreferrer noopener" target='_blank'>
+            <Image src="/projects/word-unscrambler.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className={`${styles.projectCard}`}>
+      <div className={styles.projectCardHead}>
+        <h4>PostsAPIWP</h4>
+        <div className={`${styles.dateBadge}`}>
+          September 2022
+        </div>
+        <p>Leveraging my PHP expertise, I developed a WordPress plugin capable of generating a virtual API. This API enables users to easily share their WordPress posts with other websites, enhancing content distribution and integration capabilities.</p>
+      </div>
+      <div className={styles.projectCardBody}>
+        <div className={styles.badgeContainer}>
+          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+            Online
+          </div>
+          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+            WordPress
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target='_blank'>
+            <Image src="/projects/posts-api-wp.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className={`${styles.projectCard}`}>
+      <div className={styles.projectCardHead}>
+        <h4>NFT Marketplace</h4>
+        <div className={`${styles.dateBadge}`}>
+          November 2022
+        </div>
+        <p>This project, inspired by a 4-week coding challenge, allowed me to master my API integration skills by creating a simple web app that simulates the purchase of an NFT and specifically focuses on retrieving data from an NFT API endpoint.</p>
+      </div>
+      <div className={styles.projectCardBody}>
+        <div className={styles.badgeContainer}>
+          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+            Online
+          </div>
+          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+            Javascript
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft" rel="noreferrer noopener" target='_blank'>
+            <Image src="/projects/nefta-nft.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className={`${styles.projectCard}`}>
+      <div className={styles.projectCardHead}>
+        <h4>SanBlog</h4>
+        <div className={`${styles.dateBadge}`}>
+          November 2022
+        </div>
+        <p>Using the MERN stack (MongoDB, ReactJS, ExpressJS, NodeJS), I built my very first full-stack application. It's a fully functional blogging website that represents a significant achievement in my development skills.</p>
+      </div>
+      <div className={styles.projectCardBody}>
+        <div className={styles.badgeContainer}>
+          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+            Online
+          </div>
+          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+            ReactJS
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target='_blank'>
+            <Image src="/projects/sanblog.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className={`${styles.projectCard}`}>
+      <div className={styles.projectCardHead}>
+        <h4>Oshare</h4>
+        <div className={`${styles.dateBadge}`}>
+          December 2022
+        </div>
+        <p>This full-stack web app, built with PHP and ReactJS, that enables people to upload files and share the auto-generated links to these files. These files are deleted after 24 hours and the link revoked as well.</p>
+      </div>
+      <div className={styles.projectCardBody}>
+        <div className={styles.badgeContainer}>
+          <div className={`${styles.badge} ${styles.badgeBrandRose}`}>
+            Offline
+          </div>
+          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+            ReactJS
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target='_blank'>
+            <Image src="/projects/oshare.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className={`${styles.projectCard}`}>
+      <div className={styles.projectCardHead}>
+        <h4>TailorsKit</h4>
+        <div className={`${styles.dateBadge}`}>
+          March 2023
+        </div>
+        <p>This full-stack web app, built with PHP and ReactJS, empowers tailors to efficiently store and access clients' measurements (male and female) and create orders while showcasing their portfolio. It offers a responsive solution for tailors to manage their business needs.</p>
+      </div>
+      <div className={styles.projectCardBody}>
+        <div className={styles.badgeContainer}>
+          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+            Online
+          </div>
+          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+            ReactJS
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target='_blank'>
+            <Image src="/projects/tailorskit.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className={`${styles.projectCard}`}>
+      <div className={styles.projectCardHead}>
+        <h4>Home Sparkle</h4>
+        <div className={`${styles.dateBadge}`}>
+          October 2023
+        </div>
+        <p>I honed my frontend skills through a fully responsive project, which I developed using Next.js and Bulma. This project was crafted from a Figma design, strengthening my proficiency in frontend web development.</p>
+      </div>
+      <div className={styles.projectCardBody}>
+        <div className={styles.badgeContainer}>
+          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+            Online
+          </div>
+          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+            NextJS
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target='_blank'>
+            <Image src="/projects/home-sparkle.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+          </a>
+        </div>
+      </div>
+    </div>
+    </Slider>
+  )
+}
 
 export default function Home() {
 
@@ -64,11 +342,11 @@ export default function Home() {
                     Download CV <span className='icon'>
                       <Image src="./arrowLineDown.svg" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
-                  <button className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
+                  <a href="https://wa.me/2348162273445" className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
                     <span className='icon'>
                       <Image src="./WhatsappLogo.svg" alt="Chat me up on whatsapp" width={20} height={20} />
                     </span>Ping me on whatsapp
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -173,9 +451,9 @@ export default function Home() {
                 <h3 className={styles.largeText}>Simon Ugorji (Octagon) ✨ </h3>
               </div>
               <article>
-                👋 Hello, I'm Simon, an experienced web developer with a track record of collaborating with businesses to create top-quality software solutions, backed by relevant certifications. 
+                👋 Hello, I'm Simon, an experienced web developer with a track record of collaborating with businesses to create top-quality software solutions, backed by relevant certifications.
                 <br /> <br />
-                ✍️ Additionally, I am a dedicated technical writer, sharing valuable content on platforms like Medium, Hashnode, and Dev.to, with a monthly readership of over 10,000 views. 
+                ✍️ Additionally, I am a dedicated technical writer, sharing valuable content on platforms like Medium, Hashnode, and Dev.to, with a monthly readership of over 10,000 views.
                 <br /> <br />
                 💃 Presently, I am a key player in a promising fintech startup, where I combine my development skills and writing prowess to drive innovation in the realm of financial technology. My mission is to empower businesses in the digital era while actively contributing to the tech community's knowledge and growth.
               </article>
@@ -233,7 +511,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/coding-blocks" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/coding-blocks.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/coding-blocks.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -258,7 +536,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/octagon-simon/octaValidate" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/octavalidate.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/octavalidate.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -283,7 +561,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/word-unscrambler.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/word-unscrambler.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -308,7 +586,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/posts-api-wp.png" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/posts-api-wp.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -333,7 +611,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/nefta-nft.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/nefta-nft.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -358,7 +636,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/sanblog.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/sanblog.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -383,7 +661,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/oshare.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/oshare.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -408,7 +686,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/tailorskit.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/tailorskit.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -433,7 +711,7 @@ export default function Home() {
                 </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target='_blank'>
-                    <Image src="/projects/home-sparkle.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
+                    <Image src="/projects/home-sparkle.webp" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
               </div>
@@ -441,244 +719,7 @@ export default function Home() {
 
           </div>
           <div className={styles.projectCardsContainerMobile}>
-            <Carousel showArrows={false} showIndicators={false} showThumbs={false} infiniteLoop={false} autoPlay={false}
-              swipeable={true}
-              stopOnHover={false}>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>Coding Blocks</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      July 2021
-                    </div>
-                    <p>Using my PHP skills, I created a WordPress plugin that allows for the seamless embedding of styled code snippets within WordPress posts. This enhancement addresses the issue of unstyled default code snippets, providing a more appealing and readable presentation.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        WordPress
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/Octagon-simon/coding-blocks" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/coding-blocks.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>Octavalidate</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      January 2022
-                    </div>
-                    <p>This is a feature-reach form validation library that was built with Javascript and PHP and it helps to validate your client-side and server-side forms using sophisticated regular expressions & validation rules. You will find this project implemented as a form validation for the contact section.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        Javascript
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/octagon-simon/octaValidate" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/octavalidate.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>Word Unscrambler</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      August 2022
-                    </div>
-                    <p>This is a very small project that is built with Javascript that unscrambles any word so long as that word exists in the project's custom dictionary</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        Javascript
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/word-unscrambler.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>PostsAPIWP</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      September 2022
-                    </div>
-                    <p>Leveraging my PHP expertise, I developed a WordPress plugin capable of generating a virtual API. This API enables users to easily share their WordPress posts with other websites, enhancing content distribution and integration capabilities.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        WordPress
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/posts-api-wp.png" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>NFT Marketplace</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      November 2022
-                    </div>
-                    <p>This project, inspired by a 4-week coding challenge, allowed me to master my API integration skills by creating a simple web app that simulates the purchase of an NFT and specifically focuses on retrieving data from an NFT API endpoint.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        Javascript
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/nefta-nft.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>SanBlog</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      November 2022
-                    </div>
-                    <p>Using the MERN stack (MongoDB, ReactJS, ExpressJS, NodeJS), I built my very first full-stack application. It's a fully functional blogging website that represents a significant achievement in my development skills.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        ReactJS
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/sanblog.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>Oshare</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      December 2022
-                    </div>
-                    <p>This full-stack web app, built with PHP and ReactJS, that enables people to upload files and share the auto-generated links to these files. These files are deleted after 24 hours and the link revoked as well.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandRose}`}>
-                        Offline
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        ReactJS
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/oshare.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>TailorsKit</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      March 2023
-                    </div>
-                    <p>This full-stack web app, built with PHP and ReactJS, empowers tailors to efficiently store and access clients' measurements (male and female) and create orders while showcasing their portfolio. It offers a responsive solution for tailors to manage their business needs.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        ReactJS
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/tailorskit.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`carousel-item`}>
-                <div className={`${styles.projectCard}`}>
-                  <div className={styles.projectCardHead}>
-                    <h4>Home Sparkle</h4>
-                    <div className={`${styles.dateBadge}`}>
-                      October 2023
-                    </div>
-                    <p>I honed my frontend skills through a fully responsive project, which I developed using Next.js and Bulma. This project was crafted from a Figma design, strengthening my proficiency in frontend web development.</p>
-                  </div>
-                  <div className={styles.projectCardBody}>
-                    <div className={styles.badgeContainer}>
-                      <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-                        Online
-                      </div>
-                      <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-                        NextJS
-                      </div>
-                    </div>
-                    <div className={styles.imageContainer}>
-                      <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target='_blank'>
-                        <Image src="/projects/home-sparkle.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Carousel>
+            <ProjectsSlider />
           </div>
           <div className={styles.seeMore}>
             <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
@@ -699,7 +740,7 @@ export default function Home() {
             <div className='mb-5'>
               <p className='mb-5'>Technologies that I use everyday</p>
 
-              <ul className={styles.techIcons}>
+              <ul className={`hide-on-mobile ${styles.techIcons}`}>
                 <li><Image src="/tech/Javascript.svg" alt='' width={50} height={50} /></li>
                 <li><Image src="/tech/TypeScript.svg" alt='' width={50} height={50} /></li>
                 <li><Image src="/tech/Nodejs.svg" alt='' width={50} height={50} /></li>
@@ -711,6 +752,10 @@ export default function Home() {
                 <li><Image src="/tech/Git.svg" alt='' width={50} height={50} /></li>
                 <li><Image src="/tech/Figma.svg" alt='' width={50} height={50} /></li>
               </ul>
+
+              <div className={`show-on-mobile`}>
+                <TechnologiesSlider />
+              </div>
             </div>
             <div>
               <p className='mb-5'>Databases that I use everyday</p>
@@ -729,21 +774,17 @@ export default function Home() {
             <p>💼 Career</p>
           </div>
           <h4 className={`has-text-centered ${styles.largeText}`}>My Journey so far</h4>
-
-          <div className={styles.hasPadding}>
-            <div className={styles.journey}>
-
-              <div className={styles.journeyBody}>
-                <h5>My Employment History</h5>
-                <p>Click on the link below to view a my employment history over time and the skills that I applied to the positions</p>
-              </div>
-              <div className={styles.journeyFooter}>
-                <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
-                  Check out my profile <span className='icon'><Image src="/ArrowRight.svg" width={20} height={20} alt='Arrow Right Icon' /></span>
-                </a>
-              </div>
-
+          <div className={styles.journey}>
+            <div className={styles.journeyBody}>
+              <h5>My Employment History</h5>
+              <p>Click on the link below to view a my employment history over time and the skills that I applied to the positions</p>
             </div>
+            <div className={styles.journeyFooter}>
+              <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
+                Check out my profile <span className='icon'><Image src="/ArrowRight.svg" width={20} height={20} alt='Arrow Right Icon' /></span>
+              </a>
+            </div>
+
           </div>
         </div>
       </section>
@@ -753,38 +794,37 @@ export default function Home() {
           <div className={`m-auto ${styles.badge}`}>
             <p>📬 Contact</p>
           </div>
-          <h4 className={`has-text-centered ${styles.largeText}`}>Let's talk!</h4>
-          <div className={styles.hasPadding}>
-            <div className={styles.contactForm}>
+          <h4 className={`has-text-centered ${styles.largeText}`}>Send me a message!</h4>
 
-              {
-                (hasValidated) && <div className='notification is-success mb-3'>
+          <div className={styles.contactForm}>
+
+            {
+              (hasValidated) && <div className='notification is-success mb-3'>
                 Do you like what you see? This form validation was served by my project Octavalidate!
               </div>
-              }
+            }
 
-              <form action="https://formbold.com/s/35Ey3" id="form_contact" onSubmit={handleSubmit}>
-                <div className='field mb-3'>
-                  <label className={`label ${styles.label}`}>Your email (*)</label>
-                  <input ov-required-msg="Your email address is required" ov-email-msg="Please provide a valid email address" name="email" type='email' octavalidate="R,EMAIL" id="inp_email" className={`input ${styles.input}`} placeholder='me@you.com' />
-                </div>
-                <div className='field mb-3'>
-                  <label className={`label ${styles.label}`}>Your name (*)</label>
-                  <input type='text' name="name" ov-required-msg="Your name is required" octavalidate="R,ALPHA_SPACES" id="inp_name" className={`input ${styles.input}`} placeholder='John Doe' />
-                </div>
-                <div className='field mb-3'>
-                  <label className={`label ${styles.label}`}>Subject (*)</label>
-                  <input name="subject" type='text' ov-required-msg="Email subject is required" octavalidate="R, TEXT" id="inp_subject" className={`input ${styles.input}`} placeholder='Partnership' />
-                </div>
-                <div className='field mb-5'>
-                  <label className={`label ${styles.label}`}>Message (*)</label>
-                  <textarea name="message" style={{ minHeight: '150px' }} id="inp_message" octavalidate="R,TEXT" ov-required-msg="Your message is required" placeholder="Hello, I'm John from" className={`input ${styles.input}`}></textarea>
-                </div>
-                <div className='field mb-3'>
-                  <button className={`button ${styles.contactButton}`}>Send message</button>
-                </div>
-              </form>
-            </div>
+            <form noValidate method='post' action="https://formbold.com/s/35Ey3" id="form_contact" onSubmit={handleSubmit}>
+              <div className='field mb-3'>
+                <label className={`label ${styles.label}`}>Your email (*)</label>
+                <input ov-required-msg="Your email address is required" ov-email-msg="Please provide a valid email address" name="email" type='email' octavalidate="R,EMAIL" id="inp_email" className={`input ${styles.input}`} placeholder='me@you.com' />
+              </div>
+              <div className='field mb-3'>
+                <label className={`label ${styles.label}`}>Your name (*)</label>
+                <input type='text' name="name" ov-required-msg="Your name is required" octavalidate="R,ALPHA_SPACES" id="inp_name" className={`input ${styles.input}`} placeholder='John Doe' />
+              </div>
+              <div className='field mb-3'>
+                <label className={`label ${styles.label}`}>Subject (*)</label>
+                <input name="subject" type='text' ov-required-msg="Email subject is required" octavalidate="R, TEXT" id="inp_subject" className={`input ${styles.input}`} placeholder='Partnership' />
+              </div>
+              <div className='field mb-5'>
+                <label className={`label ${styles.label}`}>Message (*)</label>
+                <textarea name="message" style={{ minHeight: '150px' }} id="inp_message" octavalidate="R,TEXT" ov-required-msg="Your message is required" placeholder="Hello, I'm John from" className={`input ${styles.input}`}></textarea>
+              </div>
+              <div className='field mb-3'>
+                <button className={`button ${styles.contactButton}`}>Send message</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>

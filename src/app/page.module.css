@@ -44,7 +44,7 @@
   align-items: flex-end;
 }
 
-.heroContactButtons a {
+.heroContactButtons a:first-child {
   color: var(--brand-blue);
   justify-content: flex-end;
   width: 100%;
@@ -52,15 +52,21 @@
   font-size: .8em !important;
 }
 
-button.isFilled {
+.isFilled {
   background-color: var(--brand-blue-dark-2) !important;
   border-color: transparent !important;
   color: var(--brand-blue) !important;
 }
 
-button.isOutlined {
+.isOutlined {
   border-color: var(--brand-blue);
   background-color: transparent !important;
+  color: var(--brand-blue) !important;
+}
+
+.isOutlined:hover{
+    background-color: var(--brand-blue-dark-2) !important;
+  border-color: transparent !important;
   color: var(--brand-blue) !important;
 }
 
@@ -245,7 +251,7 @@ button.isOutlined {
 }
 
 .anchorTag {
-  color: var(--brand-blue-dark-1);
+  color: var(--brand-blue-dark-1) !important;
   font-weight: 600;
 }
 
@@ -343,7 +349,7 @@ button.isOutlined {
 }
 
 .input::placeholder{
-  color: var(--brand-blue-dark-2);
+  color: rgba(255, 255, 255, 0.199) !important;
 }
 
 .input:focus, .input:active{
@@ -394,19 +400,18 @@ button.isOutlined {
 
   .heroMobile .heroSocial {
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .heroContactButtons {
     align-items: center !important;
+    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .heroContactButtons a {
     margin-bottom: 0 !important;
-  }
-
-  .heroContactButtons {
-    flex-direction: row;
-    align-items: flex-start;
   }
 
   .heroContactButtons a {
@@ -456,9 +461,16 @@ button.isOutlined {
     display: block !important;
   }
 
+  .projectCard .projectCardHead p {
+    width: 100% !important;
+  }
+
   .projectCardsContainerMobile .projectCard {
     max-width: 100% !important;
-    margin: 0 5px !important;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    min-height: 680px;
   }
 
   .worksAndProjectsBtnGroup {
@@ -470,6 +482,14 @@ button.isOutlined {
   }
 
   .skillsSection .largeText, .journeySection .largeText{
+    text-align: left !important;
+  }
+
+  .skillsSection .badge, .contactSection .badge{
+    margin: 0 !important;
+  }
+
+  .skillsSection .largeText, .contactSection .largeText{
     text-align: left !important;
   }
 
