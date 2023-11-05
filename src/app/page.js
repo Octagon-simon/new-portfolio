@@ -43,20 +43,20 @@ export default function Home() {
                   <p>👋 Greetings!</p>
                 </div>
                 <div className={styles.heroNameContainer}>
-                  <h1>Simon Ugorji</h1>
+                  <h1>Simon Ugorji ✨</h1>
                 </div>
                 <p style={{ marginBottom: '15px' }}>Software Developer · Technical Writer</p>
                 <div className={styles.heroSocial}>
-                  <a href="">
+                  <a href="https://github.com/Octagon-simon">
                     <Image src={'./github.svg'} alt='Check out my Github Profile' width={25} height={25} />
                   </a>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/simon-ugorji-57a6a41a3/">
                     <Image src={'./linkedin.svg'} alt='Connect with me on LinkedIn' width={25} height={25} />
                   </a>
                 </div>
               </div>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
-                <Image className={styles.heroMyMe} src={'./my-me.svg'} width={500} height={500} alt='Simon Ugorji' />
+                <Image className={styles.heroMyMe} src={'./AvatarAndIcons.svg'} width={500} height={500} alt='Avatar and Icons' />
               </div>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
                 <div className={styles.heroContactButtons}>
@@ -74,15 +74,15 @@ export default function Home() {
             </div>
             <div className={`${styles.heroMobile}`}>
               <div className={styles.heroSocial}>
-                <a href="">
+                <a href="https://github.com/Octagon-simon">
                   <Image src={'./github.svg'} alt='Check out my Github Profile' width={25} height={25} />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/simon-ugorji-57a6a41a3/">
                   <Image src={'./linkedin.svg'} alt='Connect with me on LinkedIn' width={25} height={25} />
                 </a>
               </div>
               <div className={`has-text-centered`}>
-                <Image className={styles.heroMyMe} src={'./my-me.svg'} width={500} height={500} alt='Simon Ugorji' />
+                <Image className={styles.heroMyMe} src={'./AvatarAndIcons.svg'} width={500} height={500} alt='Avatar and Icons' />
               </div>
               <div className={`${''}`}>
                 <div className={styles.badge}>
@@ -160,21 +160,24 @@ export default function Home() {
       </section>
       <section className={`${styles.sectionAbout} ${styles.sectionContent}`}>
         <div className='container'>
-          <div className='columns'>
+          <div className='columns is-align-content-center is-align-items-center'>
             <div className='column is-4 is-align-self-center has-text-centered'>
-              <Image src="./myMe.svg" alt='Simon Ugorji' width={300} height={300} />
+              <Image src="./simon-ugorji.svg" alt='Simon Ugorji' width={350} height={350} />
             </div>
-            <div className='column'>
+            <div className='column'></div>
+            <div className='column is-6'>
               <div className={styles.badge}>
                 <p>🧐 About me</p>
               </div>
-              <h3 className={styles.aboutLargeText}>Simon Ugorji</h3>
+              <div>
+                <h3 className={styles.largeText}>Simon Ugorji (Octagon) ✨ </h3>
+              </div>
               <article>
-                👋 Hello, I'm Simon, and I've been deeply involved in web development for over three years. During this time, I've had the privilege of working with various businesses to create software solutions that not only meet but also exceed their expectations. I've earned certifications that reflect my commitment to delivering high-quality work.
-                <br /><br />
-                ✍️ Besides my development work, I'm also a passionate technical writer. You can find my articles on platforms like Medium, Hashnode, and Dev.to, where I share insights, tips, and expertise on various programming languages and technologies. Through my writing, I've connected with a global audience and my blogs collectively receive at least 10,000 views every month.
-                <br /><br />
-                💃 Currently, I'm excited to be part of a promising fintech startup. Here, I'm using my expertise in web development and technical writing to contribute to innovation in the field of financial technology. My goal is to assist businesses in thriving in the digital age while sharing my knowledge and insights with the broader tech community.
+                👋 Hello, I'm Simon, an experienced web developer with a track record of collaborating with businesses to create top-quality software solutions, backed by relevant certifications. 
+                <br /> <br />
+                ✍️ Additionally, I am a dedicated technical writer, sharing valuable content on platforms like Medium, Hashnode, and Dev.to, with a monthly readership of over 10,000 views. 
+                <br /> <br />
+                💃 Presently, I am a key player in a promising fintech startup, where I combine my development skills and writing prowess to drive innovation in the realm of financial technology. My mission is to empower businesses in the digital era while actively contributing to the tech community's knowledge and growth.
               </article>
             </div>
           </div>
@@ -192,28 +195,18 @@ export default function Home() {
             <div className='column is-align-self-flex-end'>
               <div className={`buttons-group ${styles.worksAndProjectsBtnGroup}`}>
                 <button onClick={() => setDateRange(null)} className={`button mr-3 ${styles.hasIcon} ${(dateRange === null) ? styles.isFilled : styles.isOutlined}`}>
-                  <span className='icon'>
-                    <Image src="./PaletteIcon.svg" alt="Technical Articles" width={20} height={20} />
-                  </span>
                   All
                 </button>
                 <button onClick={() => setDateRange("2021")} className={`button mr-3 ${(dateRange === "2021") ? styles.isFilled : styles.isOutlined} ${styles.hasIcon}`}>
-                  <span className='icon'>
-                    {/* <Image src="./DesignIcon.svg" alt="Web development Projects" width={20} height={20} /> */}
-                    <Image src="./PaletteIcon.svg" alt="Technical Articles" width={20} height={20} />
-                  </span>
                   2021
                 </button>
                 <button onClick={() => setDateRange("2022")} className={`button mr-3 ${styles.hasIcon} ${(dateRange === "2022") ? styles.isFilled : styles.isOutlined}`}>
-                  <span className='icon'>
+                  {/* <span className='icon'>
                     <Image src="./PaletteIcon.svg" alt="Technical Articles" width={20} height={20} />
-                  </span>
+                  </span> */}
                   2022
                 </button>
                 <button onClick={() => setDateRange("2023")} className={`button ${styles.hasIcon} ${(dateRange === "2023") ? styles.isFilled : styles.isOutlined}`}>
-                  <span className='icon'>
-                    <Image src="./PaletteIcon.svg" alt="Technical Articles" width={20} height={20} />
-                  </span>
                   2023
                 </button>
               </div>
@@ -239,7 +232,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/Octagon-simon/coding-blocks" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/coding-blocks.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -264,7 +257,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/octagon-simon/octaValidate" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/octavalidate.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -289,7 +282,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/word-unscrambler.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -314,7 +307,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/posts-api-wp.png" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -339,7 +332,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/nefta-nft.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -364,7 +357,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/sanblog.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -389,7 +382,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/oshare.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -414,7 +407,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/tailorskit.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -439,7 +432,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.imageContainer}>
-                  <a href="" rel="noreferrer noopener" target='_blank'>
+                  <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target='_blank'>
                     <Image src="/projects/home-sparkle.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                   </a>
                 </div>
@@ -470,7 +463,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/Octagon-simon/coding-blocks" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/coding-blocks.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -496,7 +489,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/octagon-simon/octaValidate" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/octavalidate.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -522,7 +515,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/word-unscrambler.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -548,7 +541,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/posts-api-wp.png" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -574,7 +567,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/nefta-nft.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -600,7 +593,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/sanblog.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -626,7 +619,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/oshare.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -652,7 +645,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/tailorskit.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>
@@ -678,7 +671,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.imageContainer}>
-                      <a href="" rel="noreferrer noopener" target='_blank'>
+                      <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target='_blank'>
                         <Image src="/projects/home-sparkle.jpg" alt='' className='img is-fullwidth' width={500} height={500} />
                       </a>
                     </div>

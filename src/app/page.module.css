@@ -1,5 +1,5 @@
 /* .greetingsContainer {
-  background-color: var(--brand-purple-shade);
+  background-color: var(--brand-blue-dark-3);
   width: 160px;
   border-radius: 15px;
   padding: 15px;
@@ -7,13 +7,12 @@
 }
 
 .greetingsContainer p {
-  color: var(--brand-purple);
+  color: var(--brand-blue);
   font-size: 1.2rem;
   font-weight: bold;
 } */
 
 .heroNameContainer {
-  max-width: 200px;
   margin-bottom: 15px;
 }
 
@@ -46,7 +45,7 @@
 }
 
 .heroContactButtons a {
-  color: var(--brand-purple-dark-1);
+  color: var(--brand-blue);
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 10px;
@@ -54,15 +53,15 @@
 }
 
 button.isFilled {
-  background-color: var(--brand-purple-dark-3) !important;
+  background-color: var(--brand-blue-dark-2) !important;
   border-color: transparent !important;
-  color: var(--brand-purple-dark-1) !important;
+  color: var(--brand-blue) !important;
 }
 
 button.isOutlined {
-  border-color: var(--brand-purple-dark-1);
+  border-color: var(--brand-blue);
   background-color: transparent !important;
-  color: var(--brand-purple-dark-1) !important;
+  color: var(--brand-blue) !important;
 }
 
 .sectionContent {
@@ -76,7 +75,7 @@ button.isOutlined {
 .sectionExperience {
   /* border-top-width: 1px; */
   border-style: solid;
-  border-color: var(--brand-purple-dark-2);
+  border-color: var(--brand-blue-dark-2);
   /* border-bottom-width: 1px; */
   border-width: 1px 0;
 }
@@ -99,7 +98,7 @@ button.isOutlined {
 }
 
 .experienceInner .experienceCards .experienceItem {
-  border: 1px solid var(--brand-purple-dark-1);
+  border: 1px solid var(--brand-blue-dark-1);
   padding: 20px;
   border-radius: 15px;
   display: inline-flex;
@@ -112,7 +111,7 @@ button.isOutlined {
 }
 
 .experienceInner .experienceCards .experienceItem:nth-child(2) {
-  background-color: var(--brand-purple-dark-3);
+  background-color: var(--brand-blue-dark-3);
 }
 
 .experienceInner .experienceCards .experienceItem .experienceContent {
@@ -128,7 +127,7 @@ button.isOutlined {
 .experienceInner .experienceDescription {
   display: flex;
   gap: 20px;
-  background-color: var(--brand-purple-dark-3);
+  background-color: var(--brand-blue-dark-3);
   padding: 20px 40px;
   border-radius: 15px;
   justify-content: space-between;
@@ -138,7 +137,7 @@ button.isOutlined {
 
 .experienceInner .experienceDescription .descriptionItem {
   text-align: center;
-  color: var(--brand-purple);
+  color: var(--brand-blue);
 }
 
 .experienceInner .experienceDescription .descriptionItem p:last-child {
@@ -183,7 +182,7 @@ button.isOutlined {
 }
 
 .projectCard {
-  border: 1px solid var(--brand-purple-dark-1);
+  border: 1px solid var(--brand-blue-dark-1);
   padding: 2rem;
   width: 100%;
   /* Limit to 4 child elements per row that is (100% / 4) - the gap */
@@ -236,8 +235,8 @@ button.isOutlined {
   text-align: center;
   font-size: 1rem;
   border-radius: 20px;
-  background-color: var(--brand-purple-dark-3);
-  color: var(--brand-purple);
+  background-color: var(--brand-blue-dark-3);
+  color: var(--brand-blue);
 }
 
 .seeMore {
@@ -246,7 +245,7 @@ button.isOutlined {
 }
 
 .anchorTag {
-  color: var(--brand-purple-dark-1);
+  color: var(--brand-blue-dark-1);
   font-weight: 600;
 }
 
@@ -255,7 +254,7 @@ button.isOutlined {
 }
 
 .badge {
-  background-color: var(--brand-purple-shade);
+  background-color: var(--brand-blue-dark-3);
   width: 100%;
   max-width: fit-content !important;
   border-radius: 15px;
@@ -264,7 +263,7 @@ button.isOutlined {
 }
 
 .badge p {
-  color: var(--brand-purple);
+  color: var(--brand-blue);
   font-size: 1rem;
   font-weight: bold;
 }
@@ -272,17 +271,19 @@ button.isOutlined {
 .badge.badgeBrandGreen {
   background-color: var(--brand-green-dark-1);
   color: var(--brand-green);
+  font-weight: bold;
 }
 
 .badge.badgeBrandPurple {
-  background-color: var(--brand-purple-dark-3);
-  color: var(--brand-purple);
+  background-color: var(--brand-blue-dark-3);
+  color: var(--brand-blue);
 }
 
 .badge.badgeBrandRose {
   background-color: var(--brand-rose-dark-1);
   border-radius: 10px;
   color: var(--brand-rose);
+  font-weight: bold;
 }
 
 .skillsSection .techIcons {
@@ -301,7 +302,7 @@ button.isOutlined {
 
 .journey {
   margin: auto;
-  background-color: var(--brand-purple-dark-3);
+  background-color: var(--brand-blue-dark-3);
   padding: 20px;
   border-radius: 10px;
   width: 100%;
@@ -338,11 +339,11 @@ button.isOutlined {
 .input {
   background-color: transparent !important;
   color: #fff;
-  border-color: var(--brand-purple-dark-1) !important;
+  border-color: var(--brand-blue-dark-1) !important;
 }
 
 .input::placeholder{
-  color: var(--brand-purple-dark-2);
+  color: var(--brand-blue-dark-2);
 }
 
 .input:focus, .input:active{
@@ -350,16 +351,16 @@ button.isOutlined {
 }
 
 .contactButton{
-  background-color:  var(--brand-purple) !important;
+  background-color:  var(--brand-blue) !important;
   color: #fff !important;
-  border-color: var(--brand-purple) !important;
+  border-color: var(--brand-blue) !important;
   width: 100%;
 }
 
 .backToTop{
   background-color: transparent !important;
   border: unset;
-  color: var(--brand-purple-dark-1);
+  color: var(--brand-blue-dark-1);
   cursor: pointer;
 }
 
@@ -409,7 +410,6 @@ button.isOutlined {
   }
 
   .heroContactButtons a {
-    color: var(--brand-purple-dark-1);
     justify-content: flex-start;
   }
 
