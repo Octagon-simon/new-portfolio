@@ -334,7 +334,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
-                <Image className={styles.heroMyMe} src={'./AvatarAndIcons.svg'} width={500} height={500} alt='Avatar and Icons' />
+                <Image className={styles.heroMyMe} src={'./AvatarAndIcons.webp'} width={500} height={500} alt='Avatar and Icons' />
               </div>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
                 <div className={styles.heroContactButtons}>
@@ -360,7 +360,7 @@ export default function Home() {
                 </a>
               </div>
               <div className={`has-text-centered`}>
-                <Image className={styles.heroMyMe} src={'./AvatarAndIcons.svg'} width={500} height={500} alt='Avatar and Icons' />
+                <Image className={styles.heroMyMe} src={'./AvatarAndIcons.webp'} width={500} height={500} alt='Avatar and Icons' />
               </div>
               <div className={`${''}`}>
                 <div className={styles.badge}>
@@ -440,7 +440,7 @@ export default function Home() {
         <div className='container'>
           <div className='columns is-align-content-center is-align-items-center'>
             <div className='column is-4 is-align-self-center has-text-centered'>
-              <Image src="./simon-ugorji.svg" alt='Simon Ugorji' width={350} height={350} />
+              <Image src="./simon-ugorji.webp" alt='Simon Ugorji' width={350} height={350} />
             </div>
             <div className='column'></div>
             <div className='column is-6'>
