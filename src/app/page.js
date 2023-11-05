@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import styles from './Page.module.css'
+import styles from './page.module.css'
 import { useState } from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
