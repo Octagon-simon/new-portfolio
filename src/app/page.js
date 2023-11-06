@@ -214,7 +214,7 @@ const ProjectsSlider = () => {
         <div className={`${styles.dateBadge}`}>
           December 2022
         </div>
-        <p>This full-stack web app, built with PHP and ReactJS, that enables people to upload files and share the auto-generated links to these files. These files are deleted after 24 hours and the link revoked as well.</p>
+        <p>This is full-stack web app, built with PHP and ReactJS, that enables people to upload files and share the auto-generated links to these files. These files are deleted after 24 hours and the links revoked as well.</p>
       </div>
       <div className={styles.projectCardBody}>
         <div className={styles.badgeContainer}>
@@ -326,10 +326,10 @@ export default function Home() {
                 <p style={{ marginBottom: '15px' }}>Software Developer · Technical Writer</p>
                 <div className={styles.heroSocial}>
                   <a href="https://github.com/Octagon-simon">
-                    <Image src={'./github.svg'} alt='Check out my Github Profile' width={25} height={25} />
+                    <Image src={'/github.webp'} alt='Check out my Github Profile' width={25} height={25} />
                   </a>
                   <a href="https://www.linkedin.com/in/simon-ugorji-57a6a41a3/">
-                    <Image src={'./linkedin.svg'} alt='Connect with me on LinkedIn' width={25} height={25} />
+                    <Image src={'/linkedin.webp'} alt='Connect with me on LinkedIn' width={25} height={25} />
                   </a>
                 </div>
               </div>
@@ -340,11 +340,11 @@ export default function Home() {
                 <div className={styles.heroContactButtons}>
                   <a className={styles.hasIcon} href=''>
                     Download CV <span className='icon'>
-                      <Image src="./arrowLineDown.svg" alt='Download CV Icon' width={20} height={20} /></span>
+                      <Image src="/arrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
                   <a href="https://wa.me/2348162273445" className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
                     <span className='icon'>
-                      <Image src="./WhatsappLogo.svg" alt="Chat me up on whatsapp" width={20} height={20} />
+                      <Image src="/WhatsappLogo.webp" alt="Chat me up on whatsapp" width={20} height={20} />
                     </span>Ping me on whatsapp
                   </a>
                 </div>
@@ -353,10 +353,10 @@ export default function Home() {
             <div className={`${styles.heroMobile}`}>
               <div className={styles.heroSocial}>
                 <a href="https://github.com/Octagon-simon">
-                  <Image src={'./github.svg'} alt='Check out my Github Profile' width={25} height={25} />
+                  <Image src={'/github.webp'} alt='Check out my Github Profile' width={25} height={25} />
                 </a>
                 <a href="https://www.linkedin.com/in/simon-ugorji-57a6a41a3/">
-                  <Image src={'./linkedin.svg'} alt='Connect with me on LinkedIn' width={25} height={25} />
+                  <Image src={'/linkedin.webp'} alt='Connect with me on LinkedIn' width={25} height={25} />
                 </a>
               </div>
               <div className={`has-text-centered`}>
@@ -367,19 +367,19 @@ export default function Home() {
                   <p>👋 Greetings!</p>
                 </div>
                 <div className={styles.heroNameContainer}>
-                  <h1>Simon Ugorji</h1>
+                  <h1>Simon Ugorji ✨</h1>
                 </div>
                 <p style={{ marginBottom: '20px' }}>Software Developer · Technical Writer</p>
                 <div className={styles.heroContactButtons}>
                   <a className={styles.hasIcon} href=''>
                     Download CV <span className='icon'>
-                      <Image src="./arrowLineDown.svg" alt='Download CV Icon' width={20} height={20} /></span>
+                      <Image src="/arrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
-                  <button className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
+                  <a href="https://wa.me/2348162273445" className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
                     <span className='icon'>
-                      <Image src="./WhatsappLogo.svg" alt="Chat me up on whatsapp" width={20} height={20} />
+                      <Image src="/WhatsappLogo.webp" alt="Chat me up on whatsapp" width={20} height={20} />
                     </span>Ping me on whatsapp
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -393,28 +393,28 @@ export default function Home() {
             <div className={styles.experienceCards}>
               <div className={styles.experienceItem}>
                 <div className={styles.experienceIcon}>
-                  <Image src="./CodeIcon.svg" alt="De" width={80} height={80} />
+                  <Image src="/CodeIcon.webp" alt="De" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
                   <p>3 years as</p>
-                  <p>Programmer</p>
+                  <p>Developer</p>
                 </div>
               </div>
               <div className={styles.experienceItem}>
                 <div className={styles.experienceIcon}>
-                  <Image src="./ProjectsIcon.svg" alt="De" width={80} height={80} />
+                  <Image src="/ProjectsIcon.webp" alt="De" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
-                  <p>7 years of</p>
+                  <p>3 years of</p>
                   <p>Work</p>
                 </div>
               </div>
               <div className={styles.experienceItem}>
                 <div className={styles.experienceIcon}>
-                  <Image src="./DesignIcon.svg" alt="De" width={80} height={80} />
+                  <Image src="/DesignIcon.webp" alt="De" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
-                  <p>4 years of</p>
+                  <p>3 years of</p>
                   <p>Technical Writing</p>
                 </div>
               </div>
@@ -723,7 +723,7 @@ export default function Home() {
           </div>
           <div className={styles.seeMore}>
             <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
-              Check out my blog on Medium <span className='icon'><Image src="/ArrowRight.svg" width={20} height={20} alt='Arrow Right Icon' /></span>
+              Check out my blog on Medium <span className='icon'><Image src="/ArrowRight.webp" width={20} height={20} alt='Arrow Right Icon' /></span>
             </a>
           </div>
         </div>
@@ -777,7 +777,7 @@ export default function Home() {
           <div className={styles.journey}>
             <div className={styles.journeyBody}>
               <h5>My Employment History</h5>
-              <p>Click on the link below to view a my employment history over time and the skills that I applied to the positions</p>
+              <p>Click on the link below to view my employment history over time and the skills that I applied in those positions.</p>
             </div>
             <div className={styles.journeyFooter}>
               <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
