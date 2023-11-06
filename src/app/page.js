@@ -340,11 +340,11 @@ export default function Home() {
                 <div className={styles.heroContactButtons}>
                   <a className={styles.hasIcon} href=''>
                     Download CV <span className='icon'>
-                      <Image src="/ArrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
+                      <Image src="/ArrowLineDown.svg" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
                   <a href="https://wa.me/2348162273445" className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
                     <span className='icon'>
-                      <Image src="/WhatsappLogo.webp" alt="Chat me up on whatsapp" width={20} height={20} />
+                      <Image src="/WhatsappLogo.svg" alt="Chat me up on whatsapp" width={20} height={20} />
                     </span>Ping me on whatsapp
                   </a>
                 </div>
@@ -373,11 +373,11 @@ export default function Home() {
                 <div className={styles.heroContactButtons}>
                   <a className={styles.hasIcon} href=''>
                     Download CV <span className='icon'>
-                      <Image src="/ArrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
+                      <Image src="/ArrowLineDown.svg" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
                   <a href="https://wa.me/2348162273445" className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
                     <span className='icon'>
-                      <Image src="/WhatsappLogo.webp" alt="Chat me up on whatsapp" width={20} height={20} />
+                      <Image src="/WhatsappLogo.svg" alt="Chat me up on whatsapp" width={20} height={20} />
                     </span>Ping me on whatsapp
                   </a>
                 </div>
@@ -723,7 +723,7 @@ export default function Home() {
           </div>
           <div className={styles.seeMore}>
             <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
-              Check out my blog on Medium <span className='icon'><Image src="/ArrowRight.webp" width={20} height={20} alt='Arrow Right Icon' /></span>
+              Check out my blog on Medium <span className='icon'><Image src="/ArrowRight.svg" width={20} height={20} alt='Arrow Right Icon' /></span>
             </a>
           </div>
         </div>
