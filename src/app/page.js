@@ -334,13 +334,13 @@ export default function Home() {
                 </div>
               </div>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
-                <Image className={styles.heroMyMe} src={'./AvatarAndIcons.webp'} width={500} height={500} alt='Avatar and Icons' />
+                <Image className={styles.heroMyMe} src={'/AvatarAndIcons.webp'} width={500} height={500} alt='Avatar and Icons' />
               </div>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
                 <div className={styles.heroContactButtons}>
                   <a className={styles.hasIcon} href=''>
                     Download CV <span className='icon'>
-                      <Image src="/arrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
+                      <Image src="/ArrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
                   <a href="https://wa.me/2348162273445" className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
                     <span className='icon'>
@@ -373,7 +373,7 @@ export default function Home() {
                 <div className={styles.heroContactButtons}>
                   <a className={styles.hasIcon} href=''>
                     Download CV <span className='icon'>
-                      <Image src="/arrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
+                      <Image src="/ArrowLineDown.webp" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
                   <a href="https://wa.me/2348162273445" className={`button ${styles.isOutlined} ${styles.hasIcon}`}>
                     <span className='icon'>
@@ -393,7 +393,7 @@ export default function Home() {
             <div className={styles.experienceCards}>
               <div className={styles.experienceItem}>
                 <div className={styles.experienceIcon}>
-                  <Image src="/CodeIcon.webp" alt="De" width={80} height={80} />
+                  <Image src="/CodeIcon.svg" alt="Code Icon" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
                   <p>3 years as</p>
@@ -402,7 +402,7 @@ export default function Home() {
               </div>
               <div className={styles.experienceItem}>
                 <div className={styles.experienceIcon}>
-                  <Image src="/ProjectsIcon.webp" alt="De" width={80} height={80} />
+                  <Image src="/ProjectsIcon.svg" alt="Projects Icon" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
                   <p>3 years of</p>
@@ -411,7 +411,7 @@ export default function Home() {
               </div>
               <div className={styles.experienceItem}>
                 <div className={styles.experienceIcon}>
-                  <Image src="/DesignIcon.webp" alt="De" width={80} height={80} />
+                  <Image src="/DesignIcon.svg" alt="Design Icon" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
                   <p>3 years of</p>
@@ -440,7 +440,7 @@ export default function Home() {
         <div className='container'>
           <div className='columns is-align-content-center is-align-items-center'>
             <div className='column is-4 is-align-self-center has-text-centered'>
-              <Image src="./simon-ugorji.webp" alt='Simon Ugorji' width={350} height={350} />
+              <Image src="/simon-ugorji.webp" alt='Simon Ugorji' width={350} height={350} />
             </div>
             <div className='column'></div>
             <div className='column is-6'>
