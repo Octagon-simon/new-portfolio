@@ -28,9 +28,7 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-G8TW41FQR2', {
-          page_path: window.location.pathname,
-          });
+          gtag('config', 'G-G8TW41FQR2');
         `}
       </Script>
       <body>
