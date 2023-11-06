@@ -326,10 +326,10 @@ export default function Home() {
                 <p style={{ marginBottom: '15px' }}>Software Developer · Technical Writer</p>
                 <div className={styles.heroSocial}>
                   <a href="https://github.com/Octagon-simon">
-                    <Image src={'/github.webp'} alt='Check out my Github Profile' width={25} height={25} />
+                    <Image src={'/github.svg'} alt='Check out my Github Profile' width={25} height={25} />
                   </a>
                   <a href="https://www.linkedin.com/in/simon-ugorji-57a6a41a3/">
-                    <Image src={'/linkedin.webp'} alt='Connect with me on LinkedIn' width={25} height={25} />
+                    <Image src={'/linkedin.svg'} alt='Connect with me on LinkedIn' width={25} height={25} />
                   </a>
                 </div>
               </div>
@@ -353,10 +353,10 @@ export default function Home() {
             <div className={`${styles.heroMobile}`}>
               <div className={styles.heroSocial}>
                 <a href="https://github.com/Octagon-simon">
-                  <Image src={'/github.webp'} alt='Check out my Github Profile' width={25} height={25} />
+                  <Image src={'/github.svg'} alt='Check out my Github Profile' width={25} height={25} />
                 </a>
                 <a href="https://www.linkedin.com/in/simon-ugorji-57a6a41a3/">
-                  <Image src={'/linkedin.webp'} alt='Connect with me on LinkedIn' width={25} height={25} />
+                  <Image src={'/linkedin.svg'} alt='Connect with me on LinkedIn' width={25} height={25} />
                 </a>
               </div>
               <div className={`has-text-centered`}>
