@@ -12,7 +12,6 @@ html, body{
   --brand-rose : #C83267;
   --brand-purple : #7B4AE2;
   --brand-blue: #033AF4;
-  /* --brand-purple : #033AF4; */
   --brand-green: #4AE290;
 
   --brand-green-dark-1 : rgba(74, 226, 144, 0.3);
@@ -26,9 +25,6 @@ html, body{
   --brand-blue-dark-1 : rgba(3, 58, 244, 0.5);
   --brand-blue-dark-2 : rgba(3, 58, 244, 0.2);
   --brand-blue-dark-3 : rgba(3, 58, 244, 0.1);
-/* 
-  --brand-purple-dark-1 : rgba(3, 58, 244, 0.5);
-  --brand-purple-dark-2 : rgba(3, 58, 244, 0.2);
-  --brand-purple-dark-3 : rgba(3, 58, 244, 0.1); */
+
   --brand-purple-shade : #7b4be214;
 }

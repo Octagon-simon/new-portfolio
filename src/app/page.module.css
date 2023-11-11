@@ -1,17 +1,3 @@
-/* .greetingsContainer {
-  background-color: var(--brand-blue-dark-3);
-  width: 160px;
-  border-radius: 15px;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.greetingsContainer p {
-  color: var(--brand-blue);
-  font-size: 1.2rem;
-  font-weight: bold;
-} */
-
 .heroNameContainer {
   margin-bottom: 15px;
 }
@@ -357,7 +343,7 @@
 }
 
 .contactButton{
-  background-color:  var(--brand-blue) !important;
+  background-color: var(--brand-blue) !important;
   color: #fff !important;
   border-color: var(--brand-blue) !important;
   width: 100%;
@@ -384,10 +370,6 @@
   .sectionContent {
     padding: 2rem 1rem !important;
   }
-
-  /* .hasPadding {
-    padding: 2.5rem 1rem !important;
-  } */
 
   .heroDesktop {
     display: none !important;
@@ -502,7 +484,7 @@
 /* Styles for Desktop Screens */
 @media screen and (min-width: 768px) {}
 
-/* Your tablet-specific styles here */
+/* Tablet Styles here */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .projectCard {
     max-width: calc(50% - 20px) !important;
