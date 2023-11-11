@@ -7,6 +7,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+//Techstack
 const TechnologiesSlider = () => {
   const settings = {
     dots: false,
@@ -52,6 +53,7 @@ const TechnologiesSlider = () => {
   );
 };
 
+//My projects
 const ProjectsSlider = () => {
   const settings = {
     dots: false,
@@ -286,7 +288,7 @@ const ProjectsSlider = () => {
 
 export default function Home() {
 
-  const [dateRange, setDateRange] = useState("2022");
+  const [dateRange, setDateRange] = useState("2023");
 
   const [hasValidated, setHasValidated] = useState(false)
 
@@ -479,9 +481,6 @@ export default function Home() {
                   2021
                 </button>
                 <button onClick={() => setDateRange("2022")} className={`button mr-3 ${styles.hasIcon} ${(dateRange === "2022") ? styles.isFilled : styles.isOutlined}`}>
-                  {/* <span className='icon'>
-                    <Image src="./PaletteIcon.svg" alt="Technical Articles" width={20} height={20} />
-                  </span> */}
                   2022
                 </button>
                 <button onClick={() => setDateRange("2023")} className={`button ${styles.hasIcon} ${(dateRange === "2023") ? styles.isFilled : styles.isOutlined}`}>
