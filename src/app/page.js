@@ -373,7 +373,7 @@ export default function Home() {
                 </div>
                 <p style={{ marginBottom: '20px' }}>Software Developer · Technical Writer</p>
                 <div className={styles.heroContactButtons}>
-                  <a className={styles.hasIcon} href=''>
+                  <a className={styles.hasIcon} href='https://resume.creddle.io/resume/4n88q8aqyth'>
                     Download CV <span className='icon'>
                       <Image src="/ArrowLineDown.svg" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
