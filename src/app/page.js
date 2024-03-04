@@ -115,173 +115,173 @@ const ProjectsSlider = () => {
         </div>
       </div>
       <div className={`${styles.projectCard}`}>
-      <div className={styles.projectCardHead}>
-        <h4>Word Unscrambler</h4>
-        <div className={`${styles.dateBadge}`}>
-          August 2022
-        </div>
-        <p>This is a very small project that is built with Javascript that unscrambles any word so long as that word exists in the project's custom dictionary</p>
-      </div>
-      <div className={styles.projectCardBody}>
-        <div className={styles.badgeContainer}>
-          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-            Online
+        <div className={styles.projectCardHead}>
+          <h4>Word Unscrambler</h4>
+          <div className={`${styles.dateBadge}`}>
+            August 2022
           </div>
-          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-            Javascript
+          <p>This is a very small project that is built with Javascript that unscrambles any word so long as that word exists in the project's custom dictionary</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              Javascript
+            </div>
           </div>
-        </div>
-        <div className={styles.imageContainer}>
-          <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler" rel="noreferrer noopener" target='_blank'>
-            <Image src="/projects/word-unscrambler.webp" alt='' className='img is-fullwidth' width={500} height={500} />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className={`${styles.projectCard}`}>
-      <div className={styles.projectCardHead}>
-        <h4>PostsAPIWP</h4>
-        <div className={`${styles.dateBadge}`}>
-          September 2022
-        </div>
-        <p>Leveraging my PHP expertise, I developed a WordPress plugin capable of generating a virtual API. This API enables users to easily share their WordPress posts with other websites, enhancing content distribution and integration capabilities.</p>
-      </div>
-      <div className={styles.projectCardBody}>
-        <div className={styles.badgeContainer}>
-          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-            Online
-          </div>
-          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-            WordPress
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/word-unscrambler.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target='_blank'>
-            <Image src="/projects/posts-api-wp.webp" alt='' className='img is-fullwidth' width={500} height={500} />
-          </a>
-        </div>
       </div>
-    </div>
-    <div className={`${styles.projectCard}`}>
-      <div className={styles.projectCardHead}>
-        <h4>NFT Marketplace</h4>
-        <div className={`${styles.dateBadge}`}>
-          November 2022
-        </div>
-        <p>This project, inspired by a 4-week coding challenge, allowed me to master my API integration skills by creating a simple web app that simulates the purchase of an NFT and specifically focuses on retrieving data from an NFT API endpoint.</p>
-      </div>
-      <div className={styles.projectCardBody}>
-        <div className={styles.badgeContainer}>
-          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-            Online
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>PostsAPIWP</h4>
+          <div className={`${styles.dateBadge}`}>
+            September 2022
           </div>
-          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-            Javascript
+          <p>Leveraging my PHP expertise, I developed a WordPress plugin capable of generating a virtual API. This API enables users to easily share their WordPress posts with other websites, enhancing content distribution and integration capabilities.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              WordPress
+            </div>
           </div>
-        </div>
-        <div className={styles.imageContainer}>
-          <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft" rel="noreferrer noopener" target='_blank'>
-            <Image src="/projects/nefta-nft.webp" alt='' className='img is-fullwidth' width={500} height={500} />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className={`${styles.projectCard}`}>
-      <div className={styles.projectCardHead}>
-        <h4>SanBlog</h4>
-        <div className={`${styles.dateBadge}`}>
-          November 2022
-        </div>
-        <p>Using the MERN stack (MongoDB, ReactJS, ExpressJS, NodeJS), I built my very first full-stack application. It's a fully functional blogging website that represents a significant achievement in my development skills.</p>
-      </div>
-      <div className={styles.projectCardBody}>
-        <div className={styles.badgeContainer}>
-          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-            Online
-          </div>
-          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-            ReactJS
+          <div className={styles.imageContainer}>
+            <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/posts-api-wp.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target='_blank'>
-            <Image src="/projects/sanblog.webp" alt='' className='img is-fullwidth' width={500} height={500} />
-          </a>
-        </div>
       </div>
-    </div>
-    <div className={`${styles.projectCard}`}>
-      <div className={styles.projectCardHead}>
-        <h4>Oshare</h4>
-        <div className={`${styles.dateBadge}`}>
-          December 2022
-        </div>
-        <p>This is full-stack web app, built with PHP and ReactJS, that enables people to upload files and share the auto-generated links to these files. These files are deleted after 24 hours and the links revoked as well.</p>
-      </div>
-      <div className={styles.projectCardBody}>
-        <div className={styles.badgeContainer}>
-          <div className={`${styles.badge} ${styles.badgeBrandRose}`}>
-            Offline
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>NFT Marketplace</h4>
+          <div className={`${styles.dateBadge}`}>
+            November 2022
           </div>
-          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-            ReactJS
+          <p>This project, inspired by a 4-week coding challenge, allowed me to master my API integration skills by creating a simple web app that simulates the purchase of an NFT and specifically focuses on retrieving data from an NFT API endpoint.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              Javascript
+            </div>
           </div>
-        </div>
-        <div className={styles.imageContainer}>
-          <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target='_blank'>
-            <Image src="/projects/oshare.webp" alt='' className='img is-fullwidth' width={500} height={500} />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className={`${styles.projectCard}`}>
-      <div className={styles.projectCardHead}>
-        <h4>TailorsKit</h4>
-        <div className={`${styles.dateBadge}`}>
-          March 2023
-        </div>
-        <p>This full-stack web app, built with PHP and ReactJS, empowers tailors to efficiently store and access clients' measurements (male and female) and create orders while showcasing their portfolio. It offers a responsive solution for tailors to manage their business needs.</p>
-      </div>
-      <div className={styles.projectCardBody}>
-        <div className={styles.badgeContainer}>
-          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-            Online
-          </div>
-          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-            ReactJS
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/nefta-nft.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target='_blank'>
-            <Image src="/projects/tailorskit.webp" alt='' className='img is-fullwidth' width={500} height={500} />
-          </a>
-        </div>
       </div>
-    </div>
-    <div className={`${styles.projectCard}`}>
-      <div className={styles.projectCardHead}>
-        <h4>Home Sparkle</h4>
-        <div className={`${styles.dateBadge}`}>
-          October 2023
-        </div>
-        <p>I honed my frontend skills through a fully responsive project, which I developed using Next.js and Bulma. This project was crafted from a Figma design, strengthening my proficiency in frontend web development.</p>
-      </div>
-      <div className={styles.projectCardBody}>
-        <div className={styles.badgeContainer}>
-          <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
-            Online
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>SanBlog</h4>
+          <div className={`${styles.dateBadge}`}>
+            November 2022
           </div>
-          <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
-            NextJS
+          <p>Using the MERN stack (MongoDB, ReactJS, ExpressJS, NodeJS), I built my very first full-stack application. It's a fully functional blogging website that represents a significant achievement in my development skills.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              ReactJS
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/sanblog.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target='_blank'>
-            <Image src="/projects/home-sparkle.webp" alt='' className='img is-fullwidth' width={500} height={500} />
-          </a>
+      </div>
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>Oshare</h4>
+          <div className={`${styles.dateBadge}`}>
+            December 2022
+          </div>
+          <p>This is full-stack web app, built with PHP and ReactJS, that enables people to upload files and share the auto-generated links to these files. These files are deleted after 24 hours and the links revoked as well.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandRose}`}>
+              Offline
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              ReactJS
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/oshare.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>TailorsKit</h4>
+          <div className={`${styles.dateBadge}`}>
+            March 2023
+          </div>
+          <p>This full-stack web app, built with PHP and ReactJS, empowers tailors to efficiently store and access clients' measurements (male and female) and create orders while showcasing their portfolio. It offers a responsive solution for tailors to manage their business needs.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              ReactJS
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/tailorskit.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>Home Sparkle</h4>
+          <div className={`${styles.dateBadge}`}>
+            October 2023
+          </div>
+          <p>I honed my frontend skills through a fully responsive project, which I developed using Next.js and Bulma. This project was crafted from a Figma design, strengthening my proficiency in frontend web development.</p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.badgeContainer}>
+            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>
+              Online
+            </div>
+            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>
+              NextJS
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target='_blank'>
+              <Image src="/projects/home-sparkle.webp" alt='' className='img is-fullwidth' width={500} height={500} />
+            </a>
+          </div>
+        </div>
+      </div>
     </Slider>
   )
 }
@@ -340,7 +340,7 @@ export default function Home() {
               </div>
               <div className={`column is-align-self-center ${styles.heroColumnsItem}`}>
                 <div className={styles.heroContactButtons}>
-                  <a className={styles.hasIcon} href=''>
+                  <a className={styles.hasIcon} href='https://resume.creddle.io/resume/4n88q8aqyth'>
                     Download CV <span className='icon'>
                       <Image src="/ArrowLineDown.svg" alt='Download CV Icon' width={20} height={20} /></span>
                   </a>
@@ -453,11 +453,13 @@ export default function Home() {
                 <h3 className={styles.largeText}>Simon Ugorji (Octagon) ✨ </h3>
               </div>
               <article>
-                👋 Hello, I'm Simon, an experienced web developer with a track record of collaborating with businesses to create top-quality software solutions, backed by relevant certifications.
+                <strong>Highly motivated Software Developer</strong> with over 4 years of experience crafting innovative software solutions that consistently exceed client expectations. Proven ability to deliver high-quality work through strong technical skills and a commitment to continuous learning, demonstrated by certifications such as Udacity's JavaScript Programming Foundations, Coursera's Building Web Applications in PHP, Cisco's JavaScript Essentials and Advanced Training, and Udemy's The Complete 2024 Web Development Bootcamp and Understanding TypeScript.
                 <br /> <br />
-                ✍️ Additionally, I am a dedicated technical writer, sharing valuable content on platforms like Medium, Hashnode, and Dev.to, with a monthly readership of over 10,000 views.
+                <strong>Passionate technical writer (10k+ monthly views on Medium, Hashnode, Dev.to)</strong> sharing insights on programming languages and technologies.
                 <br /> <br />
-                💃 Presently, I am a key player in a promising fintech startup, where I combine my development skills and writing prowess to drive innovation in the realm of financial technology. My mission is to empower businesses in the digital era while actively contributing to the tech community's knowledge and growth.
+                <strong>Experienced Technical Support Specialist</strong> at Afriex, adept at providing effective solutions, managing customer inquiries, and ensuring clear communication throughout the support process. Maintains a professional and courteous demeanor in all interactions.
+                <br /> <br />
+                <strong>Collaborative team player</strong> with exceptional time management skills. Thrives on tackling challenges and implementing effective solutions through code.
               </article>
             </div>
           </div>
