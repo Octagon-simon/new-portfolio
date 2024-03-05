@@ -288,7 +288,7 @@ const ProjectsSlider = () => {
 
 export default function Home() {
 
-  const [dateRange, setDateRange] = useState("2023");
+  const [dateRange, setDateRange] = useState(null);
 
   const [hasValidated, setHasValidated] = useState(false)
 
@@ -398,8 +398,8 @@ export default function Home() {
                   <Image src="/CodeIcon.svg" alt="Code Icon" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
-                  <p>3 years as</p>
-                  <p>Developer</p>
+                  <p>4 years of</p>
+                  <p>Experience</p>
                 </div>
               </div>
               <div className={styles.experienceItem}>
@@ -407,7 +407,7 @@ export default function Home() {
                   <Image src="/ProjectsIcon.svg" alt="Projects Icon" width={80} height={80} />
                 </div>
                 <div className={styles.experienceContent}>
-                  <p>3 years of</p>
+                  <p>4 years of</p>
                   <p>Work</p>
                 </div>
               </div>
@@ -453,13 +453,13 @@ export default function Home() {
                 <h3 className={styles.largeText}>Simon Ugorji (Octagon) ✨ </h3>
               </div>
               <article>
-                <strong>Highly motivated Software Developer</strong> with over 4 years of experience crafting innovative software solutions that consistently exceed client expectations. Proven ability to deliver high-quality work through strong technical skills and a commitment to continuous learning, demonstrated by certifications such as Udacity's JavaScript Programming Foundations, Coursera's Building Web Applications in PHP, Cisco's JavaScript Essentials and Advanced Training, and Udemy's The Complete 2024 Web Development Bootcamp and Understanding TypeScript.
+                <strong className='has-text-white'>Highly motivated Software Developer</strong> with over 4 years of experience crafting innovative software solutions that consistently exceed client expectations. Proven ability to deliver high-quality work through strong technical skills and a commitment to continuous learning, demonstrated by certifications such as Udacity's JavaScript Programming Foundations, Coursera's Building Web Applications in PHP, Cisco's JavaScript Essentials and Advanced Training, and Udemy's The Complete 2024 Web Development Bootcamp and Understanding TypeScript.
                 <br /> <br />
-                <strong>Passionate technical writer (10k+ monthly views on Medium, Hashnode, Dev.to)</strong> sharing insights on programming languages and technologies.
+                <strong className='has-text-white'>Passionate technical writer (10k+ monthly views on Medium, Hashnode, Dev.to)</strong> sharing insights on programming languages and technologies.
                 <br /> <br />
-                <strong>Experienced Technical Support Specialist</strong> at Afriex, adept at providing effective solutions, managing customer inquiries, and ensuring clear communication throughout the support process. Maintains a professional and courteous demeanor in all interactions.
+                <strong className='has-text-white'>Experienced Technical Support Specialist</strong> at Afriex, adept at providing effective solutions, managing customer inquiries, and ensuring clear communication throughout the support process. Maintains a professional and courteous demeanor in all interactions.
                 <br /> <br />
-                <strong>Collaborative team player</strong> with exceptional time management skills. Thrives on tackling challenges and implementing effective solutions through code.
+                <strong className='has-text-white'>Collaborative team player</strong> with exceptional time management skills. Thrives on tackling challenges and implementing effective solutions through code.
               </article>
             </div>
           </div>
@@ -781,7 +781,7 @@ export default function Home() {
               <p>Click on the link below to view my employment history over time and the skills that I applied in those positions.</p>
             </div>
             <div className={styles.journeyFooter}>
-              <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://simon-ugorji.medium.com' target='_blank' rel='noreferrer noopener'>
+              <a className={`${styles.hasIcon} ${styles.anchorTag}`} href='https://www.linkedin.com/in/simon-ugorji-57a6a41a3/' target='_blank' rel='noreferrer noopener'>
                 Check out my profile <span className='icon'><Image src="/ArrowRight.svg" width={20} height={20} alt='Arrow Right Icon' /></span>
               </a>
             </div>
@@ -800,7 +800,7 @@ export default function Home() {
           <div className={styles.contactForm}>
 
             {
-              (hasValidated) && <div className='notification is-success mb-3'>
+              (hasValidated) && <div className='notification is-success is-light mb-3'>
                 Do you like what you see? This form validation was served by my project Octavalidate!
               </div>
             }
