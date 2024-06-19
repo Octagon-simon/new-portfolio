@@ -452,8 +452,8 @@ export default function Home() {
               <div>
                 <h3 className={styles.largeText}>Simon Ugorji (Octagon) ✨ </h3>
               </div>
-              <article>
-                I&apos;m a <strong className='has-text-white'>Software Engineer</strong> with over four years (4 years) of experience creating software solutions that meet and often surpass client needs. My skill set includes various programming languages and frameworks, backed by certifications from Udacity (JavaScript Programming Foundations), Coursera (Building Web Applications in PHP), Cisco (JavaScript Essentials and Advanced Training), and Udemy (The Complete 2024 Web Development Bootcamp, Understanding TypeScript). I&apos;m also a technical writer with a solid following, attracting over 10,000 monthly views on Medium, Hashnode, and Dev.to. I enjoy sharing knowledge about programming and new technologies.
+              <article className='has-text-white'>
+                I&apos;m a <strong>Software Engineer</strong> with over four years (4 years) of experience creating software solutions that meet and often surpass client needs. My skill set includes various programming languages and frameworks, backed by certifications from Udacity (JavaScript Programming Foundations), Coursera (Building Web Applications in PHP), Cisco (JavaScript Essentials and Advanced Training), and Udemy (The Complete 2024 Web Development Bootcamp, Understanding TypeScript). I&apos;m also a technical writer with a solid following, attracting over 10,000 monthly views on Medium, Hashnode, and Dev.to. I enjoy sharing knowledge about programming and new technologies.
                 <br /> <br />
                 In addition to my skills, I am also a Technical Support Agent. As a Technical Support Agent, I handle technical issues, and customer questions, and ensure clear communication. My goal is always to provide excellent support and keep customers satisfied - and this has been one of my strengths.
                 <br /> <br />
