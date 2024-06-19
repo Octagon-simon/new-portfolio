@@ -453,13 +453,11 @@ export default function Home() {
                 <h3 className={styles.largeText}>Simon Ugorji (Octagon) ✨ </h3>
               </div>
               <article>
-                <strong className='has-text-white'>Highly motivated Software Developer</strong> with over 4 years of experience crafting innovative software solutions that consistently exceed client expectations. Proven ability to deliver high-quality work through strong technical skills and a commitment to continuous learning, demonstrated by certifications such as Udacity's JavaScript Programming Foundations, Coursera's Building Web Applications in PHP, Cisco's JavaScript Essentials and Advanced Training, and Udemy's The Complete 2024 Web Development Bootcamp and Understanding TypeScript.
+                I&apos;m a <strong className='has-text-white'>Software Engineer</strong> with over four years (4 years) of experience creating software solutions that meet and often surpass client needs. My skill set includes various programming languages and frameworks, backed by certifications from Udacity (JavaScript Programming Foundations), Coursera (Building Web Applications in PHP), Cisco (JavaScript Essentials and Advanced Training), and Udemy (The Complete 2024 Web Development Bootcamp, Understanding TypeScript). I&apos;m also a technical writer with a solid following, attracting over 10,000 monthly views on Medium, Hashnode, and Dev.to. I enjoy sharing knowledge about programming and new technologies.
                 <br /> <br />
-                <strong className='has-text-white'>Passionate technical writer (10k+ monthly views on Medium, Hashnode, Dev.to)</strong> sharing insights on programming languages and technologies.
+                In addition to my skills, I am also a Technical Support Agent. As a Technical Support Agent, I handle technical issues, and customer questions, and ensure clear communication. My goal is always to provide excellent support and keep customers satisfied - and this has been one of my strengths.
                 <br /> <br />
-                <strong className='has-text-white'>Experienced Technical Support Specialist</strong> at Afriex, adept at providing effective solutions, managing customer inquiries, and ensuring clear communication throughout the support process. Maintains a professional and courteous demeanor in all interactions.
-                <br /> <br />
-                <strong className='has-text-white'>Collaborative team player</strong> with exceptional time management skills. Thrives on tackling challenges and implementing effective solutions through code.
+                I work well in teams, manage my time effectively, and love solving problems with code. New challenges motivate me, and I always seek to improve and innovate.
               </article>
             </div>
           </div>
