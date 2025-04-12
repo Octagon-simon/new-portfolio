@@ -1,0 +1,21 @@
+.progressContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand-purple) 0%, var(--brand-blue) 100%);
+  transition: width 0.1s ease-out;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+[data-theme="light"] .progressBar {
+  background: linear-gradient(90deg, var(--brand-purple) 0%, var(--brand-blue) 100%);
+}

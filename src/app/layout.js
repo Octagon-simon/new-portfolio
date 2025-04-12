@@ -4,6 +4,7 @@ import '@/styles/bulma.css';
 
 import Footer from '@/components/Footer'
 import Script from 'next/script';
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata = {
   title: 'Simon Ugorji (Octagon): Your favourite Software Developer ✨',
@@ -17,21 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Script defer="true" src="/octavalidate.js" />
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-G8TW41FQR2`}
-      />
-
-      <Script strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-G8TW41FQR2');
-        `}
-      </Script>
-      <body>
+      <body suppressHydrationWarning>
+        <Script strategy="beforeInteractive" src="/octavalidate.js" />
+        <GoogleAnalytics /> 
         {children}
         <Footer />
       </body>

@@ -1,30 +1,372 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
-
-html, body{
+html,
+body {
   background-color: var(--brand-black);
   color: rgba(255, 255, 255, 0.5) !important;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
+  scroll-behavior: smooth;
 }
 
-
 :root {
-  --brand-black : #090E16;
-  --brand-rose : #C83267;
-  --brand-purple : #7B4AE2;
-  --brand-blue: #033AF4;
-  --brand-green: #4AE290;
+  /* Dark theme (default) */
+  --brand-black: #090e16;
+  --brand-rose: #c83267;
+  --brand-purple: #7b4ae2;
+  --brand-blue: #033af4;
+  --brand-green: #4ae290;
 
-  --brand-green-dark-1 : rgba(74, 226, 144, 0.3);
-  --brand-rose-dark-1 : rgba(200, 50, 103, 0.3);
+  --brand-green-dark-1: rgba(74, 226, 144, 0.3);
+  --brand-rose-dark-1: rgba(200, 50, 103, 0.3);
 
-  --brand-purple-dark-1 : rgba(123, 74, 226, 0.5);
-  --brand-purple-dark-2 : rgba(123, 74, 226, 0.2);
-  --brand-purple-dark-3 : rgba(123, 74, 226, 0.1);
+  --brand-purple-dark-1: rgba(123, 74, 226, 0.5);
+  --brand-purple-dark-2: rgba(123, 74, 226, 0.2);
+  --brand-purple-dark-3: rgba(123, 74, 226, 0.1);
 
-  
-  --brand-blue-dark-1 : rgba(3, 58, 244, 0.5);
-  --brand-blue-dark-2 : rgba(3, 58, 244, 0.2);
-  --brand-blue-dark-3 : rgba(3, 58, 244, 0.1);
+  --brand-blue-dark-1: rgba(3, 58, 244, 0.5);
+  --brand-blue-dark-2: rgba(3, 58, 244, 0.2);
+  --brand-blue-dark-3: rgba(3, 58, 244, 0.1);
 
-  --brand-purple-shade : #7b4be214;
+  --brand-purple-shade: #7b4be214;
+
+  /* Text colors */
+  --text-primary: rgba(255, 255, 255, 1);
+  --text-secondary: rgba(255, 255, 255, 0.5);
+  --text-muted: rgba(255, 255, 255, 0.3);
+
+  /* Animation durations */
+  --animation-slow: 0.7s;
+  --animation-medium: 0.5s;
+  --animation-fast: 0.3s;
+
+  /* Card and UI elements */
+  --card-bg: rgba(20, 20, 30, 0.5);
+  --card-border: rgba(255, 255, 255, 0.05);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+
+  /* Form elements */
+  --input-bg: rgba(30, 30, 40, 0.5);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --input-text: rgba(255, 255, 255, 0.8);
+  --input-placeholder: rgba(255, 255, 255, 0.3);
+}
+
+/* Light theme variables */
+[data-theme="light"] {
+  --brand-black: #ffffff;
+  --brand-blue: #4361ee;
+  --brand-purple: #7209b7;
+  --brand-green: #06d6a0;
+  --brand-rose: #e63946;
+
+  --brand-blue-dark-1: rgba(67, 97, 238, 0.5);
+  --brand-blue-dark-2: rgba(67, 97, 238, 0.2);
+  --brand-blue-dark-3: rgba(67, 97, 238, 0.1);
+
+  --brand-purple-dark-1: rgba(114, 9, 183, 0.5);
+  --brand-purple-dark-2: rgba(114, 9, 183, 0.2);
+  --brand-purple-dark-3: rgba(114, 9, 183, 0.1);
+
+  --brand-green-dark-1: rgba(6, 214, 160, 0.3);
+  --brand-rose-dark-1: rgba(230, 57, 70, 0.3);
+
+  /* Text colors */
+  --text-primary: rgba(0, 0, 0, 0.9);
+  --text-secondary: rgba(0, 0, 0, 0.7);
+  --text-muted: rgba(0, 0, 0, 0.5);
+
+  /* Card and UI elements */
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.05);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  /* Form elements */
+  --input-bg: rgba(240, 240, 245, 0.5);
+  --input-border: rgba(0, 0, 0, 0.1);
+  --input-text: rgba(0, 0, 0, 0.8);
+  --input-placeholder: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] body {
+  color: var(--text-secondary) !important;
+  background-color: #f8f9fa;
+}
+
+[data-theme="light"] .hero {
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .badge {
+  background-color: var(--brand-blue-dark-3);
+  color: var(--brand-blue);
+}
+
+[data-theme="light"] .experienceItem,
+[data-theme="light"] .certificateCard,
+[data-theme="light"] .projectCard {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="light"] .experienceItem:hover,
+[data-theme="light"] .certificateCard:hover,
+[data-theme="light"] .projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .sectionExperience {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .experienceDescription {
+  background-color: var(--brand-blue-dark-3);
+}
+
+[data-theme="light"] .footer {
+  background-color: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Improved buttons for light mode */
+[data-theme="light"] .button.isFilled {
+  background-color: var(--brand-blue) !important;
+  color: white !important;
+  border-color: var(--brand-blue) !important;
+}
+
+[data-theme="light"] .button.isOutlined {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue) !important;
+}
+
+[data-theme="light"] .button.isOutlined:hover {
+  background-color: var(--brand-blue-dark-3) !important;
+}
+
+/* Smooth transition between themes */
+html,
+body,
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Improved theme toggle button */
+[data-theme="light"] .themeToggle {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .themeToggle .icon {
+  color: var(--brand-blue);
+}
+
+/* Improved form elements */
+[data-theme="light"] .input,
+[data-theme="light"] textarea {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+/* Target SVG elements in light theme and make them white */
+[data-theme="light"] svg {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+[data-theme="dark"] img.svg-white {
+  filter: brightness(0) invert(.6);
+}
+
+[data-theme="light"] .input:focus,
+[data-theme="light"] textarea:focus {
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px var(--brand-blue-dark-3);
+}
+
+[data-theme="light"] .contactButton {
+  background-color: var(--brand-blue) !important;
+  color: white !important;
+}
+
+/* Skill section improvements */
+[data-theme="light"] .skillsSection {
+  background-color: #ffffff;
+}
+
+/* Project section improvements */
+[data-theme="light"] .worksAndProjects {
+  background-color: var(--brand-black);
+}
+
+/* Add a subtle pattern to the background for more visual interest */
+[data-theme="light"] .sectionAbout,
+[data-theme="light"] .journeySection,
+[data-theme="light"] .contactSection {
+  background-color: #ffffff;
+  background-image: radial-gradient(var(--brand-blue-dark-3) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Print-friendly styles */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  .hero-social,
+  .heroContactButtons,
+  .worksAndProjectsBtnGroup,
+  .seeMore,
+  .contactSection,
+  .skip-to-content,
+  .themeToggle,
+  .printButton,
+  .backToTop {
+    display: none !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  a {
+    color: black !important;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 1cm;
+  }
+}
+
+[data-theme="light"] .title,
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6,
+[data-theme="light"] .largeText {
+  color: var(--text-primary) !important;
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn var(--animation-medium) ease-out forwards;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 0.3s;
+}
+
+/* Add hover effect for interactive elements */
+.hover-lift {
+  transition: transform var(--animation-fast) ease, box-shadow var(--animation-fast) ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow);
+}
+
+/* Accessibility improvements */
+:focus {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 2px;
+}
+
+/* Skip to content link for keyboard users */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: var(--brand-blue);
+  color: white;
+  z-index: 9999;
+  text-decoration: none;
+}
+
+/* Light mode specific enhancements */
+[data-theme="light"] .card,
+[data-theme="light"] .certificateCard,
+[data-theme="light"] .projectCard,
+[data-theme="light"] .experienceItem {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+}
+
+[data-theme="light"] .input,
+[data-theme="light"] textarea {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--input-text);
+}
+
+[data-theme="light"] ::placeholder {
+  color: var(--input-placeholder);
+}
+
+/* Improved buttons for light mode */
+[data-theme="light"] .button {
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

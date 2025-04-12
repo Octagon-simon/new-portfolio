@@ -3,19 +3,21 @@
 // next.config.js
 const nextConfig = {
     output: 'export',
-    images : {
-        unoptimized : true
+    images: {
+      unoptimized: true,
     },
-    basePath : ""
+    basePath: "",
+  
+    // Uncomment and use if needed
     // async redirects() {
-    //     return [
-    //         {
-    //             source: '/home',
-    //             destination: '/',
-    //             permanent: true,
-    //         },
-    //     ];
+    //   return [
+    //     {
+    //       source: '/home',
+    //       destination: '/',
+    //       permanent: true,
+    //     },
+    //   ];
     // },
-}
-
-module.exports = nextConfig
+  };
+  
+  module.exports = nextConfig;  

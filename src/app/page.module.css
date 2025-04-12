@@ -50,8 +50,8 @@
   color: var(--brand-blue) !important;
 }
 
-.isOutlined:hover{
-    background-color: var(--brand-blue-dark-2) !important;
+.isOutlined:hover {
+  background-color: var(--brand-blue-dark-2) !important;
   border-color: transparent !important;
   color: var(--brand-blue) !important;
 }
@@ -108,7 +108,6 @@
 
 .experienceInner .experienceCards .experienceItem .experienceContent {
   text-align: center;
-  color: #fff;
 }
 
 .experienceInner .experienceCards .experienceItem .experienceContent p:last-child {
@@ -137,10 +136,63 @@
   font-size: 1.5rem;
 }
 
+/* Add styles for the experience timeline */
+.experienceTimeline {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.experienceItem {
+  background-color: var(--brand-blue-dark-3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(3, 58, 244, 0.1);
+}
+
+.experienceHeader h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.companyInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.companyName {
+  color: var(--brand-blue);
+  font-weight: 600;
+}
+
+.duration {
+  color: var(--brand-blue-dark-1);
+  font-size: 0.9rem;
+}
+
+.location,
+.jobType {
+  color: var(--brand-blue-dark-1);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.viewMoreExperience {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .sectionAbout .aboutLargeText {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
   margin-bottom: 15px;
 }
 
@@ -173,6 +225,16 @@
   gap: 20px;
 }
 
+/* Add styles for the hover effect on project cards */
+.projectCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
 .projectCard {
   border: 1px solid var(--brand-blue-dark-1);
   padding: 2rem;
@@ -191,14 +253,9 @@
 }
 
 .projectCard .projectCardHead h4 {
-  color: #fff !important;
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 10px;
-}
-
-.projectCard .projectCardHead p {
-  width: 250px;
 }
 
 .projectCard .projectCardBody .imageContainer {
@@ -245,6 +302,15 @@
   display: none !important;
 }
 
+/* Improve the badge styling */
+.badge {
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+}
+
 .badge {
   background-color: var(--brand-blue-dark-3);
   width: 100%;
@@ -284,11 +350,13 @@
   gap: 1rem;
 }
 
-.skillsSection .badge, .journeySection .badge{
+.skillsSection .badge,
+.journeySection .badge {
   margin: auto;
 }
 
-.skillsSection .largeText, .journeySection .largeText{
+.skillsSection .largeText,
+.journeySection .largeText {
   text-align: center;
 }
 
@@ -319,7 +387,7 @@
   text-align: right;
 }
 
-.contactForm{
+.contactForm {
   max-width: 500px;
   margin: auto;
 }
@@ -334,31 +402,75 @@
   border-color: var(--brand-blue-dark-1) !important;
 }
 
-.input::placeholder{
+.input::placeholder {
   color: rgba(255, 255, 255, 0.199) !important;
 }
 
-.input:focus, .input:active{
+.input:focus,
+.input:active {
   background-color: transparent !important;
 }
 
-.contactButton{
+.contactButton {
   background-color: var(--brand-blue) !important;
   color: #fff !important;
   border-color: var(--brand-blue) !important;
   width: 100%;
 }
 
-.backToTop{
+.backToTop {
   background-color: transparent !important;
   border: unset;
   color: var(--brand-blue-dark-1);
   cursor: pointer;
 }
 
-.techIconsWrapper{
+.techIconsWrapper {
   padding-top: 3rem;
   text-align: center;
+}
+
+.certificatesSection .badge {
+  margin: 0;
+}
+
+.certificatesSection .largeText {
+  margin-bottom: 2rem;
+}
+
+.certificatesWrapper {
+  padding-top: 1rem;
+}
+
+.certificateCard {
+  background-color: var(--brand-blue-dark-3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.certificateCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(3, 58, 244, 0.1);
+}
+
+.certificateCard h5 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificateCard p {
+  color: var(--brand-blue-dark-1);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.certificateCard a {
+  margin-top: auto;
 }
 
 /* Mobile*/
@@ -459,30 +571,56 @@
     display: none !important;
   }
 
-  .skillsSection .badge, .journeySection .badge{
+  .skillsSection .badge,
+  .journeySection .badge {
     margin: 0 !important;
   }
 
-  .skillsSection .largeText, .journeySection .largeText{
+  .skillsSection .largeText,
+  .journeySection .largeText {
     text-align: left !important;
   }
 
-  .skillsSection .badge, .contactSection .badge{
+  .skillsSection .badge,
+  .contactSection .badge {
     margin: 0 !important;
   }
 
-  .skillsSection .largeText, .contactSection .largeText{
+  .skillsSection .largeText,
+  .contactSection .largeText {
     text-align: left !important;
   }
 
-  .techIconsWrapper{
+  .techIconsWrapper {
     padding-top: 2rem;
     text-align: left;
+  }
+
+  .certificatesSection .badge {
+    margin: 0 !important;
+  }
+
+  .certificatesSection .largeText {
+    text-align: left !important;
+  }
+
+  /* Mobile responsive styles for experience section */
+  .experienceTimeline {
+    margin: 1rem 0;
+  }
+
+  .companyInfo {
+    flex-direction: column;
+  }
+
+  .duration {
+    margin-top: 0.25rem;
   }
 }
 
 /* Styles for Desktop Screens */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* Tablet Styles here */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -492,4 +630,91 @@
 }
 
 /* Styles for screens wider than 1920 pixels (very large screens) */
-@media screen and (min-width: 1921px) {}
+@media screen and (min-width: 1921px) {
+}
+
+/* Add styles for the theme transition */
+.theme-transition {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Improve the tech icons display */
+.techIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.techIcons li {
+  transition: transform 0.3s ease;
+}
+
+.techIcons li:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* Light mode specific improvements */
+[data-theme="light"] .heroBody {
+  background-color: #ffffff;
+}
+
+[data-theme="light"] .sectionExperience {
+  background-color: #f8f9fa;
+}
+
+[data-theme="light"] .experienceItem {
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .projectCard {
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .certificateCard {
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Print mode styles */
+@media print {
+  .main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .heroBody {
+    padding: 1rem !important;
+  }
+
+  .sectionContent {
+    padding: 1rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .projectCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .projectCard {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  .certificatesWrapper {
+    page-break-inside: avoid;
+  }
+
+  .experienceTimeline {
+    page-break-inside: avoid;
+  }
+
+  .contactSection {
+    display: none !important;
+  }
+}

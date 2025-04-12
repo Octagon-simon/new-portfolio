@@ -1,0 +1,55 @@
+.printButton {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--brand-blue-dark-3);
+  color: var(--brand-blue);
+  border: 1px solid var(--brand-blue-dark-1);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.printButton:hover {
+  background-color: var(--brand-blue);
+  color: white;
+}
+
+.printButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Hide in print mode */
+@media print {
+  .printButton {
+    display: none !important;
+  }
+}
+
+/* Light mode specific styles */
+[data-theme="light"] .printButton {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .printButton:hover {
+  background-color: var(--brand-blue);
+  color: white;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .printButton {
+    bottom: 70px;
+    left: 20px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}

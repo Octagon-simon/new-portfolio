@@ -1,0 +1,30 @@
+.themeToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--brand-blue-dark-3);
+  border: 1px solid var(--brand-blue-dark-1);
+  color: var(--brand-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.themeToggle:hover {
+  transform: scale(1.1);
+  background-color: var(--brand-blue-dark-2);
+}
+
+.icon {
+  transition: transform 0.5s ease;
+}
+
+.themeToggle:hover .icon {
+  transform: rotate(30deg);
+}
