@@ -84,10 +84,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>WordPress</div>
-          </div>
           <div className={styles.imageContainer}>
             <a href="https://github.com/Octagon-simon/coding-blocks" rel="noreferrer noopener" target="_blank">
               <Image src="/projects/coding-blocks.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -106,10 +102,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Javascript</div>
-          </div>
           <div className={styles.imageContainer}>
             <a href="https://github.com/octagon-simon/octaValidate" rel="noreferrer noopener" target="_blank">
               <Image src="/projects/octavalidate.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -127,10 +119,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Javascript</div>
-          </div>
           <div className={styles.imageContainer}>
             <a
               href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler"
@@ -159,10 +147,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>WordPress</div>
-          </div>
           <div className={styles.imageContainer}>
             <a href="https://octagon-simon.github.io/projects/posts-api-wp/" rel="noreferrer noopener" target="_blank">
               <Image src="/projects/posts-api-wp.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -181,10 +165,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Javascript</div>
-          </div>
           <div className={styles.imageContainer}>
             <a
               href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft"
@@ -206,10 +186,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>ReactJS</div>
-          </div>
           <div className={styles.imageContainer}>
             <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target="_blank">
               <Image src="/projects/sanblog.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -227,10 +203,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandRose}`}>Offline</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>ReactJS</div>
-          </div>
           <div className={styles.imageContainer}>
             <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target="_blank">
               <Image src="/projects/oshare.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -249,10 +221,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>ReactJS</div>
-          </div>
           <div className={styles.imageContainer}>
             <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target="_blank">
               <Image src="/projects/tailorskit.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -270,10 +238,6 @@ const ProjectsSlider = () => {
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>NextJS</div>
-          </div>
           <div className={styles.imageContainer}>
             <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target="_blank">
               <Image src="/projects/home-sparkle.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -283,23 +247,64 @@ const ProjectsSlider = () => {
       </div>
       <div className={`${styles.projectCard}`}>
         <div className={styles.projectCardHead}>
-          <h4>Furniro | E-commerce React Template</h4>
-          <div className={`${styles.dateBadge}`}>December 2023</div>
+          <h4>Lagos Cafe</h4>
+          <div className={`${styles.dateBadge}`}>April 2024</div>
           <p>
-            A modern e-commerce template built with NextJS, featuring a responsive design, product filtering, cart
-            functionality, and checkout process. This template provides a product filtering, cart functionality, and
-            checkout process. This template provides a solid foundation for online furniture stores.
+            A restaurant management system with online ordering, reservation, and inventory management features. Built with Wix and integrated with payment gateways for seamless transactions.
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>ReactJS</div>
+          <div className={styles.imageContainer}>
+            <a href="https://lagoscafe.com" rel="noreferrer noopener" target="_blank">
+              <Image
+                src="/projects/lagos-cafe.webp"
+                alt="Lagos Cafe"
+                className="img is-fullwidth"
+                width={500}
+                height={500}
+              />
+            </a>
           </div>
+        </div>
+      </div>
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>Aiforhomework</h4>
+          <div className={`${styles.dateBadge}`}>July 2024</div>
+          <p>
+            An AI-powered educational platform that helps students with homework by providing step-by-step solutions and
+            explanations. Built with Next.js and integrated with OpenAI's API.
+          </p>
+        </div>
+        <div className={styles.projectCardBody}>
           <div className={styles.imageContainer}>
             <a href="#" rel="noreferrer noopener" target="_blank">
               <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="https://placehold.co/600x400?text=Offline&height=500&width=500"
+                alt="AI For Homework Platform"
+                className="img is-fullwidth"
+                width={500}
+                height={500}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={`${styles.projectCard}`}>
+        <div className={styles.projectCardHead}>
+          <h4>Furniro | E-commerce Template</h4>
+          <div className={`${styles.dateBadge}`}>December 2024</div>
+          <p>
+            Furniro is a fully responsive, feature-rich e-commerce platform built with Next.js and ChakraUI. It
+            offers a clean, intuitive UI and seamless user experience, perfect for businesses looking to sell
+            products online
+          </p>
+        </div>
+        <div className={styles.projectCardBody}>
+          <div className={styles.imageContainer}>
+            <a href="https://furniro-0zce.onrender.com/" rel="noreferrer noopener" target="_blank">
+              <Image
+                src="/projects/furniro.webp"
                 alt="Furniro E-commerce Template"
                 className="img is-fullwidth"
                 width={500}
@@ -312,76 +317,18 @@ const ProjectsSlider = () => {
       <div className={`${styles.projectCard}`}>
         <div className={styles.projectCardHead}>
           <h4>Rivabit</h4>
-          <div className={`${styles.dateBadge}`}>November 2023</div>
+          <div className={`${styles.dateBadge}`}>January 2025</div>
           <p>
-            A cryptocurrency exchange platform with real-time market data, secure wallet integration, and trading
-            functionality. Built with React and Node.js, focusing on security and user experience.
+            Rivabit ensures product authenticity and safeguards your brand. Using QR codes, NFC/RFID tags, and
+            digital watermarks, we offer robust protection against counterfeit threats.
           </p>
         </div>
         <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Full Stack</div>
-          </div>
           <div className={styles.imageContainer}>
-            <a href="#" rel="noreferrer noopener" target="_blank">
+            <a href="https://rivabit.com" rel="noreferrer noopener" target="_blank">
               <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="/projects/rivabit.webp"
                 alt="Rivabit Platform"
-                className="img is-fullwidth"
-                width={500}
-                height={500}
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={`${styles.projectCard}`}>
-        <div className={styles.projectCardHead}>
-          <h4>Aiforhomework</h4>
-          <div className={`${styles.dateBadge}`}>February 2024</div>
-          <p>
-            An AI-powered educational platform that helps students with homework by providing step-by-step solutions and
-            explanations. Built with Next.js and integrated with OpenAI's API.
-          </p>
-        </div>
-        <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandRose}`}>Offline</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>NextJS</div>
-          </div>
-          <div className={styles.imageContainer}>
-            <a href="#" rel="noreferrer noopener" target="_blank">
-              {/* <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="AI For Homework Platform"
-                className="img is-fullwidth"
-                width={500}
-                height={500}
-              /> */}
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={`${styles.projectCard}`}>
-        <div className={styles.projectCardHead}>
-          <h4>Lagos Cafe</h4>
-          <div className={`${styles.dateBadge}`}>January 2024</div>
-          <p>
-            A restaurant management system with online ordering, reservation, and inventory management features. Built
-            with MERN stack and integrated with payment gateways for seamless transactions.
-          </p>
-        </div>
-        <div className={styles.projectCardBody}>
-          <div className={styles.badgeContainer}>
-            <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-            <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>MERN Stack</div>
-          </div>
-          <div className={styles.imageContainer}>
-            <a href="#" rel="noreferrer noopener" target="_blank">
-              <Image
-                src="/projects/lagos-cafe.webp"
-                alt="Lagos Cafe Management System"
                 className="img is-fullwidth"
                 width={500}
                 height={500}
@@ -506,7 +453,7 @@ export default function Home() {
                 <div className={styles.heroContactButtons}>
                   <a
                     className={`${styles.hasIcon} ${styles.downloadButton}`}
-                    href="https://resume.creddle.io/resume/4n88q8aqyth"
+                    href="https://drive.google.com/file/d/1vQN0PFJmBJqMSX2PBdok-RCXrO9teiTb/view?usp=drive_link"
                   >
                     Download CV{" "}
                     <span className="icon">
@@ -549,7 +496,7 @@ export default function Home() {
                 </div>
                 <p style={{ marginBottom: "20px" }}>Software Developer · Technical Writer · HNG11 Finalist</p>
                 <div className={styles.heroContactButtons}>
-                  <a className={styles.hasIcon} href="https://resume.creddle.io/resume/4n88q8aqyth">
+                  <a className={styles.hasIcon} href="https://drive.google.com/file/d/1vQN0PFJmBJqMSX2PBdok-RCXrO9teiTb/view?usp=drive_link">
                     Download CV{" "}
                     <span className="icon">
                       <Image src="/ArrowLineDown.svg" alt="Download CV Icon" width={20} height={20} />
@@ -631,7 +578,7 @@ export default function Home() {
                 <h3 className={styles.largeText}>Simon Ugorji (Octagon) ✨ </h3>
               </div>
               <article>
-                I&apos;m a <strong>Software Engineer</strong> with over four years (4 years)
+                I&apos;m a Software Engineer with over four years (4 years)
                 of experience creating software solutions that meet and often surpass client needs. My skill set
                 includes various programming languages and frameworks, backed by certifications from Udacity (JavaScript
                 Programming Foundations), Coursera (Building Web Applications in PHP), Cisco (JavaScript Essentials and
@@ -711,10 +658,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>WordPress</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/coding-blocks" rel="noreferrer noopener" target="_blank">
                     <Image
@@ -740,10 +683,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Javascript</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/octagon-simon/octaValidate" rel="noreferrer noopener" target="_blank">
                     <Image
@@ -768,10 +707,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Javascript</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a
                     href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/unscrambler"
@@ -797,10 +732,6 @@ export default function Home() {
                 <p>Leveraging my PHP expertise, I developed a WordPress plugin capable of generating a virtual API.</p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>WordPress</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a
                     href="https://octagon-simon.github.io/projects/posts-api-wp/"
@@ -830,10 +761,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Javascript</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a
                     href="https://github.com/Octagon-simon/Octagon-simon.github.io/tree/main/projects/nft"
@@ -863,10 +790,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>ReactJS</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/san-blog" rel="noreferrer noopener" target="_blank">
                     <Image src="/projects/sanblog.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -886,10 +809,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandRose}`}>Offline</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>ReactJS</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/oshare" rel="noreferrer noopener" target="_blank">
                     <Image src="/projects/oshare.webp" alt="" className="img is-fullwidth" width={500} height={500} />
@@ -909,10 +828,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>ReactJS</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/tekprenuers/tailors-kit" rel="noreferrer noopener" target="_blank">
                     <Image
@@ -938,10 +853,6 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>NextJS</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a href="https://github.com/Octagon-simon/home-sparkle" rel="noreferrer noopener" target="_blank">
                     <Image
@@ -955,9 +866,58 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div className={`${styles.projectCard} ${dateRange && dateRange !== "2024" && styles.hideCard}`}>
               <div className={styles.projectCardHead}>
-                <h4>Furniro | E-commerce React Template</h4>
+                <h4>Lagos Cafe</h4>
+                <div className={`${styles.dateBadge}`}>April 2024</div>
+                <p>
+                  A restaurant management system with online ordering, reservation, and inventory management features.
+                  Built with Wix and integrated with payment gateways for seamless transactions.
+                </p>
+              </div>
+              <div className={styles.projectCardBody}>
+                <div className={styles.imageContainer}>
+                  <a href="https://lagoscafe.com" rel="noreferrer noopener" target="_blank">
+                    <Image
+                      src="/projects/lagos-cafe.webp"
+                      alt="Lagos Cafe Management System"
+                      className="img is-fullwidth"
+                      width={500}
+                      height={500}
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={`${styles.projectCard} ${dateRange && dateRange !== "2024" && styles.hideCard}`}>
+              <div className={styles.projectCardHead}>
+                <h4>Aiforhomework</h4>
+                <div className={`${styles.dateBadge}`}>July 2024</div>
+                <p>
+                  An AI-powered educational platform that helps students with homework by providing step-by-step
+                  solutions and explanations. Built with Next.js and integrated with OpenAI's API.
+                </p>
+              </div>
+              <div className={styles.projectCardBody}>
+                <div className={styles.imageContainer}>
+                  <a href="https://aiforhomework.com" rel="noreferrer noopener" target="_blank">
+                    <Image
+                      src="https://placehold.co/600x400?text=Offline&height=500&width=500"
+                      alt="AI For Homework Platform"
+                      className="img is-fullwidth"
+                      width={500}
+                      height={500}
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={`${styles.projectCard} ${dateRange && dateRange !== "2024" && styles.hideCard}`}>
+              <div className={styles.projectCardHead}>
+                <h4>Furniro | E-commerce Template</h4>
                 <div className={`${styles.dateBadge}`}>December 2024</div>
                 <p>
                   Furniro is a fully responsive, feature-rich e-commerce platform built with Next.js and ChakraUI. It
@@ -966,12 +926,8 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>NextJS</div>
-                </div>
                 <div className={styles.imageContainer}>
-                  <a href="https://furniro-0zce.onrender.com/" rel="noreferrer noopener" target="_blank">
+                  <a href="https://furniro-0zce.onrender.com" rel="noreferrer noopener" target="_blank">
                     <Image
                       src="/projects/furniro.webp"
                       alt="Furniro E-commerce Template"
@@ -994,71 +950,11 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Full Stack</div>
-                </div>
                 <div className={styles.imageContainer}>
                   <a href="https://rivabit.com" rel="noreferrer noopener" target="_blank">
                     <Image
                       src="/projects/rivabit.webp"
                       alt="Rivabit Platform"
-                      className="img is-fullwidth"
-                      width={500}
-                      height={500}
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className={`${styles.projectCard} ${dateRange && dateRange !== "2024" && styles.hideCard}`}>
-              <div className={styles.projectCardHead}>
-                <h4>Aiforhomework</h4>
-                <div className={`${styles.dateBadge}`}>February 2024</div>
-                <p>
-                  An AI-powered educational platform that helps students with homework by providing step-by-step
-                  solutions and explanations. Built with Next.js and integrated with OpenAI's API.
-                </p>
-              </div>
-              <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                <div className={`${styles.badge} ${styles.badgeBrandRose}`}>Offline</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>NextJS</div>
-                </div>
-                <div className={styles.imageContainer}>
-                  <a href="https://aiforhomework.com" rel="noreferrer noopener" target="_blank">
-                    {/* <Image
-                      src="/placeholder.svg?height=500&width=500"
-                      alt="AI For Homework Platform"
-                      className="img is-fullwidth"
-                      width={500}
-                      height={500}
-                    /> */}
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className={`${styles.projectCard} ${dateRange && dateRange !== "2024" && styles.hideCard}`}>
-              <div className={styles.projectCardHead}>
-                <h4>Lagos Cafe</h4>
-                <div className={`${styles.dateBadge}`}>April 2024</div>
-                <p>
-                  A restaurant management system with online ordering, reservation, and inventory management features.
-                  Built with Wix and integrated with payment gateways for seamless transactions.
-                </p>
-              </div>
-              <div className={styles.projectCardBody}>
-                <div className={styles.badgeContainer}>
-                  <div className={`${styles.badge} ${styles.badgeBrandGreen}`}>Online</div>
-                  <div className={`${styles.badge} ${styles.badgeBrandPurple}`}>Wix</div>
-                </div>
-                <div className={styles.imageContainer}>
-                  <a href="https://lagoscafe.com" rel="noreferrer noopener" target="_blank">
-                    <Image
-                      src="/projects/lagos-cafe.webp"
-                      alt="Lagos Cafe Management System"
                       className="img is-fullwidth"
                       width={500}
                       height={500}

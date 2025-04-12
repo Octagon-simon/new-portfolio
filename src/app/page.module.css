@@ -294,7 +294,7 @@
 }
 
 .anchorTag {
-  color: var(--brand-blue-dark-1) !important;
+  /* color: var(--brand-blue-dark-1) !important;  */
   font-weight: 600;
 }
 
